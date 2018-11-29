@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Light"), local("Gilroy-Light"), url("Gilroylight.woff2") format("woff2"), url("Gilroylight.woff") format("woff"), url("Gilroylight.ttf") format("truetype");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroylight.woff2") format("woff2"), url("../font/Gilroylight.woff") format("woff"), url("../fonts/Gilroylight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("Gilroyextrabold.woff2") format("woff2"), url("Gilroyextrabold.woff") format("woff"), url("Gilroyextrabold.ttf") format("truetype");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/Gilroyextrabold.woff2") format("woff2"), url("../fonts/Gilroyextrabold.woff") format("woff"), url("../fonts/Gilroyextrabold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-style: normal;
   line-height: 30px;
@@ -31,20 +31,22 @@ a {
 }
 
 .main-navigation {
-  font-family: "Open Sans", sans-serif;
+
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   font-style: normal;
   color: #000000;
 
-  background-color: #f0c52e;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .search-navigation input {
   font: inherit;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.2px;
+  background: none;
+  border: none;
 }
 
 .search-navigation input:hover {
@@ -189,6 +191,8 @@ a {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  background: none;
+  border: 0;
 }
 
 .button:hover,
@@ -309,7 +313,7 @@ a {
 }
 
 .breadcrumbs a:active {
-  rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .filter h2 {
@@ -348,6 +352,10 @@ a {
   color: #000000;
 }
 
+.filter label:disabled {
+  color: #a6a6a6;
+}
+
 .catalog-list {
   list-style: none;
 }
@@ -375,7 +383,6 @@ a {
 
 .modal-letter {
   background-color: #ffffff;
-
 }
 
 .modal-letter label {
@@ -389,6 +396,41 @@ a {
 }
 
 .modal-letter fieldset {
-
   border: 0 none;
+}
+
+.modal-letter input,
+.modal-letter textarea {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 17.5px;
+  color: rgba(70, 70, 70, 0.4);
+  opacity: 0.4;
+}
+
+
+.modal-letter input:hover,
+.modal-letter textarea:hover {
+
+  color: rgba(70, 70, 70, 0.4);
+  opacity: 1;
+}
+
+.modal-letter input:focus,
+.modal-letter textarea:focus {
+
+  color: #464646;
+  opacity: 1;
+  outline-color: #f0c52e;
+  outline-offset: -3px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.modal-letter input:invalid {
+  background-color: #edb5b5;
+  opacity: 0.5;
+  color: rgba(70, 70, 70, 0.4);
 }
