@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("Gilroylight.woff2") format("woff2"), url("Gilroylight.woff") format("woff"), url("Gilroylight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("Gilroyextrabold.woff2") format("woff2"), url("Gilroyextrabold.woff") format("woff"), url("Gilroyextrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  font-style: normal;
+  color: #000000;
+
+  background-color: #f0c52e;
+}
+
+.search-navigation input {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2px;
+}
+
+.search-navigation input:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-navigation input:focus {
+  color: #000000;
+}
+
+.user-navigation-list,
+.site-navigation-list {
+  list-style: none;
+}
+
+.user-navigation-list {
+  letter-spacing: 0.15px;
+}
+
+.user-navigation-list a {
+  color: #000000;
+}
+
+.user-navigation-list a:hover,
+.user-navigation-list a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logout-link a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-navigation {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+.catalog-navigation a {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-navigation a:hover,
+.catalog-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-menu-list-hidden {
+  list-style: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.catalog-menu-list-hidden a {
+  color: #000000;
+  text-transform: none;
+}
+
+.catalog-menu-list-hidden a:hover,
+.catalog-menu-list-hidden a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-menu-list-hidden a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-list {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site-navigation-list a {
+  color: #000000;
+}
+
+.site-navigation-list a:hover,
+.site-navigation-list a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-navigation-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy";
+  font-size: 47.5px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 47.5px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.about-us p,
+.contacts p {
+  color: #464646;
+}
+
+.company-list {
+  list-style: none;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #000000;
+}
+
+.button {
+  font-family: "Gilroy";
+  font-size: 18.5px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  color: #000000;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.main-footer {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.footer-user-navigation-list {
+  list-style: none;
+  letter-spacing: 0.15px;
+}
+
+.footer-user-navigation-list a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-navigation-list a:hover,
+.footer-user-navigation-list a:focus {
+  color: #ffffff;
+
+
+}
+
+.footer-user-navigation-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-logout-link a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.footer-site-navigation-list {
+  list-style: none;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+}
+
+.footer-site-navigation-list a {
+  color: #ffffff;
+}
+
+.footer-site-navigation-list a:hover,
+.footer-site-navigation-list a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.social-button-list {
+  list-style: none;
+}
+
+.social-button-list a {
+  color: #ffffff;
+}
+
+
+
+
+
+.page-title {
+  font-family: "Gilroy";
+  font-size: 47.5px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 47.5px;
+  letter-spacing: 0.48px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.breadcrumbs a:active {
+  rgba(0, 0, 0, 0.1);
+}
+
+.filter h2 {
+  font-family: "Gilroy";
+  font-size: 17.5px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24.5px;
+  letter-spacing: 3.5px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.filter ul {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  font-style: normal;
+  list-style: none;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.catalog-item-price span {
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #464646;
+}
+
+
+.modal-letter {
+  background-color: #ffffff;
+
+}
+
+.modal-letter label {
+  font-family: "Gilroy";
+  font-size: 17.5px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24.5px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.modal-letter fieldset {
+
+  border: 0 none;
+}
