@@ -331,6 +331,10 @@ a {
   border: none;
 }
 
+.filter {
+  background-color: #eee;
+}
+
 .filter legend {
   font-family: "Gilroy";
   font-weight: 800;
@@ -408,6 +412,7 @@ a {
   line-height: 17.5px;
   color: rgba(70, 70, 70, 0.4);
   opacity: 0.4;
+  background-color: #f2f2f2;
 }
 
 
@@ -416,6 +421,7 @@ a {
 
   color: rgba(70, 70, 70, 0.4);
   opacity: 1;
+  background-color: #ebebeb;
 }
 
 .modal-letter input:focus,
@@ -427,10 +433,12 @@ a {
   outline-offset: -3px;
   outline-style: solid;
   outline-width: 3px;
+  background-color: #fff;
 }
 
-.modal-letter input:invalid {
-  background-color: #edb5b5;
+.modal-letter input:invalid,
+.modal-letter textarea:invalid {
+  background-color: #f6dada;
   opacity: 0.5;
   color: rgba(70, 70, 70, 0.4);
 }
