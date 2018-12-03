@@ -30,6 +30,24 @@ a {
   text-decoration: none;
 }
 
+.main-header-logo {
+  font-size: 48px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.018em;
+}
+
+.main-footer-logo {
+  font-size: 48px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffc600;
+  letter-spacing: 0.018em;
+}
+
 .main-navigation {
 
   font-size: 15px;
