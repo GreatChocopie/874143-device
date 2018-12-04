@@ -21,7 +21,8 @@
         <div class="flex-conteiner">
           <div class="search-navigation">
             <form action="https://echo.htmlacademy.ru" method="POST">
-              <input type="search" name="Search" id="total-search" value="Поиск по сайту" aria-label="Поиск по сайту">
+              <input type="search" name="Search" id="total-search" class="total-search-input" value="Поиск по сайту"
+                aria-label="Поиск по сайту">
             </form>
           </div>
           <ul class="user-navigation-list">
@@ -32,20 +33,21 @@
         </div>
         <!-- Выпадающее меню -->
         <div class="flex-conteiner-2">
-          <div class="catalog-navigation"><a href="">Каталог товаров</a>
-            <ul class="catalog-menu-list-hidden">
-              <li><a href="">Виртуальная реальность</a></li>
-              <li><a href="">Фитнес-браслеты</a></li>
-              <li><a href="">Квадрокоптеры</a></li>
-              <li><a href="">Моноподы для селфи</a></li>
-              <li><a href="">Умные часы </a></li>
-              <li><a href="">Экшн-камеры</a></li>
-            </ul>
-          </div>
+
+          <a href="" class="catalog-navigation">Каталог товаров</a>
+          <ul class="catalog-menu-list-hidden">
+            <li><a href="">Виртуальная реальность</a></li>
+            <li><a href="">Фитнес-браслеты</a></li>
+            <li><a href="">Квадрокоптеры</a></li>
+            <li><a href="">Моноподы для селфи</a></li>
+            <li><a href="">Умные часы </a></li>
+            <li><a href="">Экшн-камеры</a></li>
+          </ul>
+
           <ul class="site-navigation-list">
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Гарантия</a></li>
-            <li><a href="">Контакты</a></li>
+            <li class="delivery-link"><a href="">Доставка</a></li>
+            <li class="warranty-link"><a href="">Гарантия</a></li>
+            <li class="contacts-link"><a href="">Контакты</a></li>
           </ul>
         </div>
       </div>
