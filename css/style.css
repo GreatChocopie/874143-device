@@ -492,25 +492,52 @@ a {
   justify-content: space-between;
   margin-bottom: 38px;
 
+
 }
 
 .flex-conteiner-2 {
   display: flex;
   justify-content: space-between;
 
+
 }
 
 .user-navigation-list {
   display: flex;
+  width: 500px;
+
+  padding-right: 3px;
+}
+
+.cart-link {
+  margin-left: auto;
+}
+
+.login-link {
+  margin-left: 27px;
+  margin-right: 237px;
 }
 
 .site-navigation-list {
   display: flex;
+  width: 500px;
 }
 
-.catalog-menu-list-hidden {
-  display: flex;
+.site-navigation-list li:first-child {
+  margin-right: 34px;
+
 }
+
+.site-navigation-list li:last-child {
+  margin-left: auto;
+
+}
+
+
+.catalog-menu-list-hidden {
+  display: none;
+}
+
 
 .conteiner {
   width: 1043px;
