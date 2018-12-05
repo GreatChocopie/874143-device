@@ -34,7 +34,7 @@ a {
   display: block;
   position: absolute;
   top: 25px;
-  left: 150px;
+  left: 143px;
 
   margin: 0;
   padding: 0;
@@ -124,6 +124,26 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* .catalog-navigation {
+  list-style: none;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+
+  position: relative;
+}
+ */
+
+
+
 .catalog-navigation {
 
   font-family: "Gilroy";
@@ -137,17 +157,17 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-navigation a {
+.catalog-navigation {
   color: #000000;
   text-transform: uppercase;
 }
 
-.catalog-navigation a:hover,
-.catalog-navigation a:focus {
+.catalog-navigation:hover,
+.catalog-navigation:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.catalog-navigation a:active {
+.catalog-navigation:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -161,13 +181,39 @@ a {
   letter-spacing: 0.15px;
   color: #000000;
   order: 3;
-  width: 550px;
+  width: 640px;
   padding: 0;
-  margin: 32px 0 0 0;
+  margin: 21px 0 0 2px;
   display: flex;
   flex-wrap: wrap;
 
+  /* position: absolute;
+  display: none; */
 
+
+}
+
+/* .catalog-navigation li li {
+  display: none;
+}
+
+.catalog-navigation li li:hover {
+  display: block;
+} */
+
+.catalog-menu-list-hidden li {
+  width: 200px;
+
+}
+
+.catalog-menu-list-hidden li:nth-child(3n+1) {
+  width: 240px;
+}
+
+
+
+.catalog-menu-list-hidden li:last-child {
+  width: 100%;
 }
 
 .catalog-menu-list-hidden a {
@@ -183,6 +229,8 @@ a {
 .catalog-menu-list-hidden a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+
 
 .site-navigation-list {
   font-family: "Gilroy";
@@ -561,8 +609,4 @@ a {
 
 .contacts-link {
   margin-left: auto;
-}
-
-.catalog-menu-list-hidden li {
-  width: 150px;
 }
