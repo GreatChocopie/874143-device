@@ -17,8 +17,9 @@
     <a class="main-header-logo">Device</a>
 
     <nav class="main-navigation">
-      <div class="conteiner">
-        <div class="flex-conteiner">
+
+      <div class="header-container">
+        <div class="flex-container">
           <div class="search-navigation">
             <form action="https://echo.htmlacademy.ru" method="POST">
               <input type="search" name="Search" id="total-search" class="total-search-input" value="Поиск по сайту"
@@ -32,7 +33,7 @@
           </ul>
         </div>
         <!-- Выпадающее меню -->
-        <div class="flex-conteiner-2">
+        <div class="flex-container-2">
 
           <a href="" class="catalog-navigation">Каталог товаров</a>
           <ul class="catalog-menu-list-hidden">
@@ -69,57 +70,73 @@
         </ul> -->
 
       </div>
+
     </nav>
 
   </header>
-  <main class="container">
-    <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
-    <section class="about-us">
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-        компаниями:</p>
-      <ul class="company-list">
-        <li><span>Деловые линии</span></li>
-        <li><span>Автотрейдинг</span></li>
-        <li><span>ЖелДорЭкспедиция</span></li>
-      </ul>
-      <div><a class="button" href="">Подробнее о нас</a></div>
-    </section>
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-        Всякое бывает.</p>
-      <div><a class="contact-map" href=""><img src="img/map.png" width="560" height="222" alt="Карта г. Москва, ул. Строителей, 15"></a></div>
-      <div><a class="button contact-button" href="">Напишите нам</a></div>
-    </section>
-  </main>
+  <div class="container">
+    <main class="main-container">
+
+      <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
+      <div class="flex-container-3 ">
+        <section class="about-us">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+            компаниями:</p>
+          <ul class="company-list">
+            <li><span>Деловые линии</span></li>
+            <li><span>Автотрейдинг</span></li>
+            <li><span>ЖелДорЭкспедиция</span></li>
+          </ul>
+          <div><a class="button" href="">Подробнее о нас</a></div>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+            Всякое бывает.</p>
+          <div><a class="contact-map" href=""><img src="img/map.png" width="560" height="222" alt="Карта г. Москва, ул. Строителей, 15"></a></div>
+          <div><a class="button contact-button" href="">Напишите нам</a></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
   <footer class="main-footer">
-    <a class="main-footer-logo">Device</a>
-    <ul class="footer-user-navigation-list">
-      <li class="login-link"><a href="">Войти</a></li>
-      <li><a href="">Сравнить</a></li>
-      <li><a href="">Корзина</a></li>
-    </ul>
-    <p class="footer-contacts-address" aria-label="Адрес:">
-      г. Москва, ул. Строителей, 15
-    </p>
-    <p class="footer-contacts-telephone" aria-label="Телефон:">Тел.: +7 (495) 495-95-95</p>
-    <ul class="footer-site-navigation-list">
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="">Контакты</a></li>
-    </ul>
-    <ul class="social-button-list" aria-label="Социальные сети">
-      <li><a class="social-button-fb" href="">Наша страница в Фейсбук</a></li>
-      <li><a class="social-button-inst" href="">Наша страница в Инстаграм</a></li>
-      <li><a class="social-button-tw" href="">Наша страница в Твитер</a></li>
-    </ul>
-    <a class="logo-htmlacademy">
-      <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HtmlAcademy">
-    </a>
+    <div class="wrapper">
+      <div class="container">
+        <div class="flex-container-4">
+          <a class="main-footer-logo">Device</a>
+          <ul class="footer-user-navigation-list">
+            <li class="footer-login-link"><a href="">Войти</a></li>
+            <li><a href="">Сравнить</a></li>
+            <li><a href="">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="flex-container-5">
+          <p class="footer-contacts-address" aria-label="Адрес:">
+            г. Москва, ул. Строителей, 15
+          </p>
+          <p class="footer-contacts-telephone" aria-label="Телефон:">Тел.: +7 (495) 495-95-95</p>
+          <ul class="footer-site-navigation-list">
+            <li class="footer-delivery-link"><a href="">Доставка</a></li>
+            <li class="footer-warranty-link"><a href="">Гарантия</a></li>
+            <li class="contacts-link"><a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <ul class="social-button-list" aria-label="Социальные сети">
+          <li><a class="social-button-fb" href="">Наша страница в Фейсбук</a></li>
+          <li><a class="social-button-inst" href="">Наша страница в Инстаграм</a></li>
+          <li><a class="social-button-tw" href="">Наша страница в Твитер</a></li>
+        </ul>
+        <a class="logo-htmlacademy">
+          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HtmlAcademy">
+        </a>
+      </div>
+    </div>
 
   </footer>
+
 
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Модальное окно письма</h2>
