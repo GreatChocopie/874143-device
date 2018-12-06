@@ -35,7 +35,7 @@
         <!-- Выпадающее меню -->
         <div class="flex-container-2">
 
-          <a href="" class="catalog-navigation">Каталог товаров</a>
+          <!-- <a href="" class="catalog-navigation">Каталог товаров</a>
           <ul class="catalog-menu-list-hidden">
             <li><a href="">Виртуальная реальность</a></li>
             <li><a href="">Фитнес-браслеты</a></li>
@@ -50,27 +50,30 @@
             <li class="warranty-link"><a href="">Гарантия</a></li>
             <li class="contacts-link"><a href="">Контакты</a></li>
           </ul>
+        </div> -->
+          <ul class="catalog-navigation">
+            <li class="catalog-link"><a href="">Каталог товаров</a>
+              <div class="hidden">
+                <ul class="catalog-menu-list-hidden">
+                  <li><a href="">Виртуальная реальность</a></li>
+                  <li><a href="">Фитнес-браслеты</a></li>
+                  <li><a href="">Квадрокоптеры</a></li>
+                  <li><a href="">Моноподы для селфи</a></li>
+                  <li><a href="">Умные часы </a></li>
+                  <li><a href="">Экшн-камеры</a></li>
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="delivery-link"><a href="">Доставка</a></li>
+            <li class="warranty-link"><a href="">Гарантия</a></li>
+            <li class="contacts-link"><a href="">Контакты</a></li>
+
+          </ul>
+
         </div>
-        <!-- <ul class="catalog-navigation">
-          <li class="catalog-link"><a href="">Каталог товаров</a>
-            <ul class="catalog-menu-list-hidden">
-              <li><a href="">Виртуальная реальность</a></li>
-              <li><a href="">Фитнес-браслеты</a></li>
-              <li><a href="">Квадрокоптеры</a></li>
-              <li><a href="">Моноподы для селфи</a></li>
-              <li><a href="">Умные часы </a></li>
-              <li><a href="">Экшн-камеры</a></li>
-            </ul>
-
-          </li>
-
-          <li class="delivery-link"><a href="">Доставка</a></li>
-          <li class="warranty-link"><a href="">Гарантия</a></li>
-          <li class="contacts-link"><a href="">Контакты</a></li>
-        </ul> -->
-
       </div>
-
     </nav>
 
   </header>
@@ -95,7 +98,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
-          <div><a class="contact-map" href=""><img src="img/map.png" width="560" height="222" alt="Карта г. Москва, ул. Строителей, 15"></a></div>
+          <div class="contact-map"><a href=""><img src="img/map.png" width="560" height="222" alt="Карта г. Москва, ул. Строителей, 15"></a></div>
           <div><a class="button contact-button" href="">Напишите нам</a></div>
         </section>
       </div>
@@ -121,21 +124,25 @@
           <ul class="footer-site-navigation-list">
             <li class="footer-delivery-link"><a href="">Доставка</a></li>
             <li class="footer-warranty-link"><a href="">Гарантия</a></li>
-            <li class="contacts-link"><a href="">Контакты</a></li>
+            <li class="footer-contacts-link"><a href="">Контакты</a></li>
           </ul>
         </div>
-        <ul class="social-button-list" aria-label="Социальные сети">
-          <li><a class="social-button-fb" href="">Наша страница в Фейсбук</a></li>
-          <li><a class="social-button-inst" href="">Наша страница в Инстаграм</a></li>
-          <li><a class="social-button-tw" href="">Наша страница в Твитер</a></li>
-        </ul>
-        <a class="logo-htmlacademy">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HtmlAcademy">
-        </a>
+        <div class="flex-container-6">
+          <div></div>
+          <ul class="social-button-list" aria-label="Социальные сети">
+            <li><a class="social-button-fb" href="">Наша страница в Фейсбук</a></li>
+            <li><a class="social-button-inst" href="">Наша страница в Инстаграм</a></li>
+            <li><a class="social-button-tw" href="">Наша страница в Твитер</a></li>
+          </ul>
+          <a class="logo-htmlacademy">
+            <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HtmlAcademy">
+          </a>
+        </div>
       </div>
     </div>
 
   </footer>
+
 
 
   <section class="modal modal-letter">
