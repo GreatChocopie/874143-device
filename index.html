@@ -15,55 +15,54 @@
   <header class="main-header">
 
 
-
-    <nav class="main-navigation">
+    <div class="main-header-container">
       <a class="main-header-logo">Device</a>
-
-      <div class="header-container">
-        <div class="flex-container">
-          <div class="search-navigation">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <input type="search" name="Search" id="total-search" class="total-search-input" value="Поиск по сайту"
-                aria-label="Поиск по сайту">
-            </form>
+      <nav class="main-navigation">
+        <div class="header-container">
+          <div class="flex-container">
+            <div class="search-navigation">
+              <form action="https://echo.htmlacademy.ru" method="POST">
+                <input type="search" name="Search" id="total-search" class="total-search-input" value="Поиск по сайту"
+                  aria-label="Поиск по сайту">
+              </form>
+            </div>
+            <ul class="user-navigation-list">
+              <li class="login-link"><a href="">Войти</a></li>
+              <li class="compare-link"><a href="">Сравнить</a></li>
+              <li class="cart-link"><a href="">Корзина</a></li>
+            </ul>
           </div>
-          <ul class="user-navigation-list">
-            <li class="login-link"><a href="">Войти</a></li>
-            <li class="compare-link"><a href="">Сравнить</a></li>
-            <li class="cart-link"><a href="">Корзина</a></li>
-          </ul>
+          <!-- Выпадающее меню -->
+          <div class="flex-container-2">
+
+            <ul class="catalog-navigation">
+              <li class="catalog-link"><a href="">Каталог товаров</a>
+                <div class="hidden">
+                  <ul class="catalog-menu-list-hidden">
+                    <li><a href="">Виртуальная реальность</a></li>
+                    <li><a href="">Фитнес-браслеты</a></li>
+                    <li><a href="">Квадрокоптеры</a></li>
+                    <li><a href="">Моноподы для селфи</a></li>
+                    <li><a href="">Умные часы </a></li>
+                    <li><a href="">Экшн-камеры</a></li>
+                  </ul>
+                </div>
+
+              </li>
+
+              <li class="delivery-link"><a href="">Доставка</a></li>
+              <li class="warranty-link"><a href="">Гарантия</a></li>
+              <li class="contacts-link"><a href="">Контакты</a></li>
+
+            </ul>
+
+          </div>
         </div>
-        <!-- Выпадающее меню -->
-        <div class="flex-container-2">
-
-          <ul class="catalog-navigation">
-            <li class="catalog-link"><a href="">Каталог товаров</a>
-              <div class="hidden">
-                <ul class="catalog-menu-list-hidden">
-                  <li><a href="">Виртуальная реальность</a></li>
-                  <li><a href="">Фитнес-браслеты</a></li>
-                  <li><a href="">Квадрокоптеры</a></li>
-                  <li><a href="">Моноподы для селфи</a></li>
-                  <li><a href="">Умные часы </a></li>
-                  <li><a href="">Экшн-камеры</a></li>
-                </ul>
-              </div>
-
-            </li>
-
-            <li class="delivery-link"><a href="">Доставка</a></li>
-            <li class="warranty-link"><a href="">Гарантия</a></li>
-            <li class="contacts-link"><a href="">Контакты</a></li>
-
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
   </header>
   <div class="container">
-    <main class="main-container">
+    <main class="container">
 
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
       <div class="flex-container-3 ">
@@ -97,8 +96,8 @@
           <a class="main-footer-logo">Device</a>
           <ul class="footer-user-navigation-list">
             <li class="footer-login-link"><a href="">Войти</a></li>
-            <li><a href="">Сравнить</a></li>
-            <li><a href="">Корзина</a></li>
+            <li class="footer-compare-link"><a href="">Сравнить</a></li>
+            <li class="footer-cart-link"><a href="">Корзина</a></li>
           </ul>
         </div>
         <div class="flex-container-5">
@@ -133,19 +132,23 @@
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Модальное окно письма</h2>
     <form action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset>
-        <legend class="visually-hidden">Напишите нам</legend>
-        <label for="user-name">Ваше имя</label>
-        <input class="name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="user-e-mail">Ваш e-mail</label>
-        <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
-      </fieldset>
-      <fieldset>
-        <label for="user-letter">Текст письма:</label>
-        <textarea id="user-letter" name="letter" rows="5" placeholder="В свободной форме"></textarea>
-      </fieldset>
-      <button type="submit" class="button">Отправить</button>
-      <button type="button" class="modal-close">Закрыть</button>
+      <div class="modal-container">
+
+        <fieldset class="user-info">
+          <legend class="visually-hidden">Напишите нам</legend>
+          <label for="user-name">Ваше имя</label>
+          <input class="name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          <label for="user-e-mail">Ваш e-mail</label>
+          <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
+        </fieldset>
+
+        <fieldset>
+          <label for="user-letter">Текст письма:</label>
+          <textarea id="user-letter" name="letter" rows="5" placeholder="В свободной форме"></textarea>
+        </fieldset>
+        <button type="submit" class="button">Отправить</button>
+        <button type="button" class="modal-close">Закрыть</button>
+      </div>
     </form>
   </section>
   <section class="modal modal-map">
