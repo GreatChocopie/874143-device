@@ -758,7 +758,7 @@ a {
 
 .page-flex-container {
   display: flex;
-  justify-content: space-between;
+
   width: 1160px;
   margin: 0 auto;
 }
@@ -767,11 +767,13 @@ a {
   background-color: #eee;
 
 
+
 }
 
 .filter-form {
   width: 201px;
   margin-left: 60px;
+  margin-right: 68px;
 
 
 }
@@ -835,19 +837,25 @@ a {
   color: #a6a6a6;
 }
 
+.catalog {
+  margin-left: auto;
+}
+
 .catalog-list {
   list-style: none;
   width: 760px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 
-  margin-left: 72px;
 
 }
 
 .catalog-item {
   width: 360px;
+
 
 }
 
@@ -859,9 +867,14 @@ a {
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
+  padding: 0;
+  margin: 0;
+
 }
 
-.catalog-item-price span {
+
+
+.catalog-item-price {
   font-family: "Gilroy";
   font-size: 16px;
   font-weight: 300;
@@ -869,6 +882,10 @@ a {
   line-height: 24px;
   letter-spacing: 0.16px;
   color: #464646;
+  margin: 0;
+  padding: 0;
+
+
 }
 
 
