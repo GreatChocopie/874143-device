@@ -131,15 +131,20 @@
 
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Модальное окно письма</h2>
+      
     <form action="https://echo.htmlacademy.ru" method="POST">
-      <div class="modal-container">
+      
 
         <fieldset class="user-info">
           <legend class="visually-hidden">Напишите нам</legend>
+        <div>
           <label for="user-name">Ваше имя</label>
           <input class="name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div>
           <label for="user-e-mail">Ваш e-mail</label>
           <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
+        </div>
         </fieldset>
 
         <fieldset>
@@ -148,8 +153,9 @@
         </fieldset>
         <button type="submit" class="button">Отправить</button>
         <button type="button" class="modal-close">Закрыть</button>
-      </div>
+      
     </form>
+    
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>

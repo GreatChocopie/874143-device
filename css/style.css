@@ -191,32 +191,9 @@ a {
   margin-left: 108px;
 }
 
-/* .catalog-navigation {
 
-  font-family: "Gilroy";
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  color: #000000;
-  display: block;
-  text-transform: uppercase;
-}
 
-.catalog-navigation {
-  color: #000000;
-  text-transform: uppercase;
-}
 
-.catalog-navigation:hover,
-.catalog-navigation:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.catalog-navigation:active {
-  color: rgba(0, 0, 0, 0.3);
-} */
 
 .flex-container {
   display: flex;
@@ -248,7 +225,7 @@ a {
 
 .login-link {
   margin-right: auto;
-  padding-left: 27px;
+  padding-left: 30px;
 }
 
 .page-cart-link {
@@ -276,10 +253,10 @@ a {
 }
 
 .header-container {
-  width: 1043px;
+  /* width: 1043px; */
   margin: 0 auto;
-  padding: 0;
-  padding-top: 42px;
+  padding: 42px 60px 0 60px;
+
 }
 
 .total-search-input {
@@ -485,14 +462,14 @@ a {
   line-height: 47.5px;
   letter-spacing: 0.5px;
   color: #000000;
-  margin-bottom: 59px;
+  margin-bottom: 40px;
 }
 
 .about-us p,
 .contacts p {
   color: #464646;
-  margin: 0;
-  margin-bottom: 44px;
+  margin-top: 30px;
+  margin-bottom: 35px;
   padding-right: 5px;
 }
 
@@ -503,12 +480,13 @@ a {
   font-weight: 800;
   line-height: 40px;
   color: #000000;
-  margin-bottom: 90px;
-  margin-top: 32px;
+  margin-bottom: 55px;
+  margin-top: 65px;
 }
 
 .contact-map {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
+
 }
 
 .button {
@@ -523,6 +501,8 @@ a {
   text-transform: uppercase;
   background: none;
   border: 0;
+
+
 }
 
 .button:hover,
@@ -640,7 +620,7 @@ a {
   display: flex;
   width: 1160px;
   justify-content: space-between;
-  margin-bottom: 68px;
+  margin-bottom: 60px;
 }
 
 .footer-contacts-telephone {
@@ -673,6 +653,7 @@ a {
   padding: 0;
   margin: 0;
   margin-left: 166px;
+
 
 
 }
@@ -961,6 +942,7 @@ a {
   flex-direction: column;
 
 
+
 }
 
 label {
@@ -968,7 +950,13 @@ label {
 }
 
 .user-info {
-  width: 760px;
+
   display: flex;
   flex-direction: row;
+
+}
+
+.name {
+  width: 360px;
+  height: 50px;
 }
