@@ -35,13 +35,8 @@ a {
   position: absolute;
   top: -15px;
   left: 59px;
-
   margin: 0;
   padding: 0;
-
-
-
-
 
   font-size: 48px;
   font-family: "Gilroy";
@@ -49,9 +44,7 @@ a {
   text-transform: uppercase;
   color: #000;
   letter-spacing: 0.018em;
-
 }
-
 
 .main-header-container {
   width: 1160px;
@@ -70,8 +63,7 @@ a {
   font-weight: 300;
   font-style: normal;
   color: #000000;
-
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: #f7e296;
 }
 
 .page-main-navigation {
@@ -79,15 +71,12 @@ a {
   width: 1160px;
   height: 186px;
 
-
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   font-style: normal;
   color: #000000;
-
-  background-color: rgba(240, 197, 46, 0.5);
-
+  background-color: #f7e296;
 }
 
 .search-navigation input {
@@ -96,6 +85,7 @@ a {
   letter-spacing: 0.2px;
   background: none;
   border: none;
+  outline: none;
 }
 
 .search-navigation input:hover {
@@ -149,10 +139,7 @@ a {
   display: flex;
   width: 1000px;
   justify-content: space-between;
-
-
 }
-
 
 .catalog-navigation a {
   color: #000000;
@@ -176,8 +163,6 @@ a {
 
 .delivery-link {
   width: 130px;
-
-
 }
 
 .warranty-link {
@@ -187,37 +172,28 @@ a {
 
 .contacts-link {
   width: 120px;
-
   margin-left: 108px;
 }
-
-
-
 
 
 .flex-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
-
-
 }
 
 .flex-container-2 {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   width: 1043px;
-
 }
 
 .user-navigation-list {
   display: flex;
   width: 500px;
-
   padding-right: 3px;
 }
-
 
 .cart-link {
   padding-left: 65px;
@@ -241,11 +217,6 @@ a {
   margin-right: 85px;
 }
 
-
-
-
-
-
 .container {
   margin: 0 auto;
   padding: 0;
@@ -253,18 +224,13 @@ a {
 }
 
 .header-container {
-  /* width: 1043px; */
   margin: 0 auto;
   padding: 42px 60px 0 60px;
-
 }
 
 .total-search-input {
   padding-left: 40px;
 }
-
-
-
 
 .catalog-menu-list-hidden {
   list-style: none;
@@ -281,61 +247,7 @@ a {
   margin: 24px 0 0 2px;
   display: flex;
   flex-wrap: wrap;
-
-
 }
-
-/* .page-catalog-menu-list-hidden {
-  list-style: none;
-  font-family: "Open Sans";
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 36px;
-  letter-spacing: 0.15px;
-  color: #000000;
-  background-color: rgba(240, 197, 46, 0.5);
-
-  width: 1160px;
-  height: 129px;
-  padding: 0;
-  margin: 24px 0 0 2px;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.page-catalog-menu-list-hidden a {
-  display: block;
-}
-
-.page-catalog-menu-list-hidden li {
-  width: 200px;
-}
-
-.page-catalog-menu-list-hidden li:nth-child(3n+1) {
-  width: 240px;
-}
-
-.page-catalog-menu-list-hidden li:last-child {
-  width: 100%;
-}
-
-.page-catalog-menu-list-hidden a {
-  color: #000000;
-  text-transform: none;
-}
-
-.page-catalog-menu-list-hidden a:hover,
-.page-catalog-menu-list-hidden a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.page-catalog-menu-list-hidden a:active {
-  color: rgba(0, 0, 0, 0.3);
-} */
-
-
 
 .catalog-menu-list-hidden a {
   display: block;
@@ -343,16 +255,11 @@ a {
 
 .catalog-menu-list-hidden li {
   width: 200px;
-
-
 }
 
 .catalog-menu-list-hidden li:nth-child(3n+1) {
   width: 240px;
-
 }
-
-
 
 .catalog-menu-list-hidden li:last-child {
   width: 100%;
@@ -377,67 +284,31 @@ a {
   display: flex;
 }
 
-
-
-
-
-
-
 .hidden {
   display: none;
   position: absolute;
   top: 20px;
+  padding: 0;
+}
 
-
-
+.hidden-wrapper {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  z-index: 10;
+  width: 1100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  background-color: #f7e296;
 }
 
 
-
-
-
-.catalog-link:hover .hidden {
+.catalog-link:hover .hidden,
+.catalog-link:hover .hidden-wrapper {
   display: block;
 }
-
-
-
-
-
-/* 
-.site-navigation-list {
-  font-family: "Gilroy";
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  color: #000000;
-  text-transform: uppercase;
-  display: flex;
-  width: 500px;
-}
-
-.delivery-link {
-  margin-right: 34px;
-}
-
-.contacts-link {
-  margin-left: auto;
-}
-
-.site-navigation-list a {
-  color: #000000;
-}
-
-.site-navigation-list a:hover,
-.site-navigation-list a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.site-navigation-list a:active {
-  color: rgba(0, 0, 0, 0.3);
-} */
 
 .flex-container-3 {
   display: flex;
@@ -501,8 +372,6 @@ a {
   text-transform: uppercase;
   background: none;
   border: 0;
-
-
 }
 
 .button:hover,
@@ -518,7 +387,6 @@ a {
   width: 100%;
   background-color: #464646;
   height: 323px;
-
 }
 
 .main-footer {
@@ -551,7 +419,6 @@ a {
   display: flex;
   width: 1160px;
   margin-bottom: 40px;
-
 }
 
 .footer-user-navigation-list {
@@ -564,7 +431,6 @@ a {
   margin-top: 63px;
   margin-bottom: 0;
   padding: 0;
-
 }
 
 .footer-cart-link {
@@ -604,8 +470,6 @@ a {
 .footer-user-navigation-list a:hover,
 .footer-user-navigation-list a:focus {
   color: #ffffff;
-
-
 }
 
 .footer-user-navigation-list a:active {
@@ -653,9 +517,6 @@ a {
   padding: 0;
   margin: 0;
   margin-left: 166px;
-
-
-
 }
 
 .footer-delivery-link {
@@ -698,13 +559,6 @@ a {
   color: #ffffff;
 }
 
-
-
-
-
-
-
-
 .page-title {
   font-family: "Gilroy";
   font-size: 47.5px;
@@ -734,29 +588,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 381px;
-
-}
-
-.page-flex-container {
-  display: flex;
-
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.filter {
-  background-color: #eee;
-
-
-
-}
-
-.filter-form {
-  width: 201px;
-  margin-left: 60px;
-  margin-right: 68px;
-
-
 }
 
 .breadcrumbs a {
@@ -772,6 +603,34 @@ a {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.page-flex-container {
+  display: flex;
+  justify-content: center;
+  min-width: 1160px;
+}
+
+.filter {
+  width: calc(50% - 252px);
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-form {
+  width: 201px;
+  margin-top: 70px;
+  margin-left: auto;
+  padding-right: 68px;
+  padding-left: 80px;
+  margin-top: 70px;
+}
+
+.filter-fieldset {
+  margin: 0 0 35px;
+  padding: 0;
+  border: 0;
+}
+
 .filter h2 {
   font-family: "Gilroy";
   font-size: 17.5px;
@@ -782,14 +641,6 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
-
-.filter fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-
 
 .filter legend {
   font-family: "Gilroy";
@@ -819,7 +670,15 @@ a {
 }
 
 .catalog {
-  margin-left: auto;
+  width: calc(50% + 252px);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-catalog-wrapper {
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 72px;
 }
 
 .catalog-list {
@@ -830,14 +689,10 @@ a {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-
-
 }
 
 .catalog-item {
   width: 360px;
-
-
 }
 
 .catalog-item h3 {
@@ -850,7 +705,6 @@ a {
   color: #000000;
   padding: 0;
   margin: 0;
-
 }
 
 
@@ -865,8 +719,6 @@ a {
   color: #464646;
   margin: 0;
   padding: 0;
-
-
 }
 
 
@@ -940,9 +792,6 @@ a {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
-
-
 }
 
 label {

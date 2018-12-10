@@ -22,7 +22,7 @@
           <div class="flex-container">
             <div class="search-navigation">
               <form action="https://echo.htmlacademy.ru" method="POST">
-                <input type="search" name="Search" id="total-search" class="total-search-input" value="Поиск по сайту"
+                <input type="search" name="Search" id="total-search" class="total-search-input" placeholder="Поиск по сайту"
                   aria-label="Поиск по сайту">
               </form>
             </div>
@@ -131,12 +131,12 @@
 
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Модальное окно письма</h2>
-      
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      
 
-        <fieldset class="user-info">
-          <legend class="visually-hidden">Напишите нам</legend>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+
+
+      <fieldset class="user-info">
+        <legend class="visually-hidden">Напишите нам</legend>
         <div>
           <label for="user-name">Ваше имя</label>
           <input class="name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -145,17 +145,17 @@
           <label for="user-e-mail">Ваш e-mail</label>
           <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
         </div>
-        </fieldset>
+      </fieldset>
 
-        <fieldset>
-          <label for="user-letter">Текст письма:</label>
-          <textarea id="user-letter" name="letter" rows="5" placeholder="В свободной форме"></textarea>
-        </fieldset>
-        <button type="submit" class="button">Отправить</button>
-        <button type="button" class="modal-close">Закрыть</button>
-      
+      <fieldset>
+        <label for="user-letter">Текст письма:</label>
+        <textarea id="user-letter" name="letter" rows="5" placeholder="В свободной форме"></textarea>
+      </fieldset>
+      <button type="submit" class="button">Отправить</button>
+      <button type="button" class="modal-close">Закрыть</button>
+
     </form>
-    
+
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>

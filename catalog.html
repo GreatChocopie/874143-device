@@ -21,7 +21,7 @@
           <div class="flex-container">
             <div class="search-navigation">
               <form action="https://echo.htmlacademy.ru" method="POST">
-                <input type="search" name="Search" id="total-search" class="total-search-input" value="Поиск по сайту"
+                <input type="search" name="Search" id="total-search" class="total-search-input" placeholder="Поиск по сайту"
                   aria-label="Поиск по сайту">
               </form>
             </div>
@@ -32,12 +32,10 @@
               <li class="page-cart-link"><a href="">Корзина</a></li>
             </ul>
           </div>
-          <!-- Выпадающее меню -->
           <div class="flex-container-2">
-
             <ul class="catalog-navigation">
               <li class="catalog-link"><a href="">Каталог товаров</a>
-                <div class="hidden">
+                <div class="hidden-wrapper">
                   <ul class="catalog-menu-list-hidden">
                     <li><a href="">Виртуальная реальность</a></li>
                     <li><a href="">Фитнес-браслеты</a></li>
@@ -47,15 +45,11 @@
                     <li><a href="">Экшн-камеры</a></li>
                   </ul>
                 </div>
-
               </li>
-
               <li class="delivery-link"><a href="">Доставка</a></li>
               <li class="warranty-link"><a href="">Гарантия</a></li>
               <li class="contacts-link"><a href="">Контакты</a></li>
-
             </ul>
-
           </div>
         </div>
       </nav>
@@ -82,7 +76,7 @@
         <!-- <h2>Фильтр:</h2> -->
 
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
@@ -110,7 +104,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option">
@@ -135,44 +129,46 @@
       </section> -->
       <section class="catalog">
         <!-- <h2 class="visually-hidden">Список моноподов</h2> -->
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <a href="">
-              <p class="catalog-item-image">
-                <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
-              </p>
-              <h3>Любительская селфи-палка</h3>
-            </a>
-            <p class="catalog-item-price">500 ₽</p>
-          </li>
-          <li class="catalog-item">
-            <a href="">
-              <p class="catalog-item-image">
-                <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-              </p>
-              <h3>Профессиональная селфи-палка</h3>
-            </a>
-            <p class="catalog-item-price">1 500 ₽</p>
-          </li>
-          <li class="catalog-item">
-            <a href="">
-              <p class="catalog-item-image">
-                <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-              </p>
-              <h3>Непотопляемая селфи-палка</h3>
-            </a>
-            <p class="catalog-item-price">2 500 ₽</p>
-          </li>
-          <li class="catalog-item">
-            <a href="">
-              <p class="catalog-item-image">
-                <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка Следуй за мной">
-              </p>
-              <h3>Селфи-палка "Следуй за мной"</h3>
-            </a>
-            <p class="catalog-item-price">4 900 ₽</p>
-          </li>
-        </ul>
+        <div class="page-catalog-wrapper">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="">
+                <p class="catalog-item-image">
+                  <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
+                </p>
+                <h3>Любительская селфи-палка</h3>
+              </a>
+              <p class="catalog-item-price">500 ₽</p>
+            </li>
+            <li class="catalog-item">
+              <a href="">
+                <p class="catalog-item-image">
+                  <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                </p>
+                <h3>Профессиональная селфи-палка</h3>
+              </a>
+              <p class="catalog-item-price">1 500 ₽</p>
+            </li>
+            <li class="catalog-item">
+              <a href="">
+                <p class="catalog-item-image">
+                  <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                </p>
+                <h3>Непотопляемая селфи-палка</h3>
+              </a>
+              <p class="catalog-item-price">2 500 ₽</p>
+            </li>
+            <li class="catalog-item">
+              <a href="">
+                <p class="catalog-item-image">
+                  <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка Следуй за мной">
+                </p>
+                <h3>Селфи-палка "Следуй за мной"</h3>
+              </a>
+              <p class="catalog-item-price">4 900 ₽</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <!-- Здесь будет форма ПЕРЕКЛЮЧАЛКА-->
