@@ -182,7 +182,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.catalog-link a::after {
+.catalog-list::after {
   content: "";
 
   position: absolute;
