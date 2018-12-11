@@ -27,8 +27,8 @@
               </form>
             </div>
             <ul class="user-navigation-list">
-              <li class="login-link"><a href="">Войти</a></li>
-              <li class="compare-link"><a href="">Сравнить</a></li>
+              <li><a class="login-link" href="">Войти</a></li>
+              <li><a class="compare-link" href="">Сравнить</a></li>
               <li><a class="cart-link" href="">Корзина</a></li>
             </ul>
           </div>
@@ -132,26 +132,25 @@
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Модальное окно письма</h2>
 
-    <form class="fotm-flex" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="form-flex" action="https://echo.htmlacademy.ru" method="POST">
 
 
-      <div class="user-info">
-        <legend class="visually-hidden">Напишите нам</legend>
-        <div>
-          <label for="user-name">Ваше имя</label>
-          <input class="name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        </div>
-        <div>
-          <label for="user-e-mail">Ваш e-mail</label>
-          <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
-        </div>
+
+      <legend class="visually-hidden">Напишите нам</legend>
+      <div class="user-info-name">
+        <label for="user-name">Ваше имя</label>
+        <input class="name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="user-info-mail">
+        <label for="user-e-mail">Ваш e-mail</label>
+        <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
       </div>
 
-      <div>
+      <div class="user-text">
         <label for="user-letter">Текст письма:</label>
-        <textarea id="user-letter" name="letter" rows="5" placeholder="В свободной форме"></textarea>
+        <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме"></textarea>
       </div>
-      <button type="submit" class="button">Отправить</button>
+      <button type="submit" class="button modal-button">Отправить</button>
       <button type="button" class="modal-close">Закрыть</button>
 
     </form>
