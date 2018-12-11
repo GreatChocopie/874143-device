@@ -30,6 +30,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header-logo {
   display: block;
   position: absolute;
@@ -79,7 +102,7 @@ a {
   background-color: #f7e296;
 }
 
-.search-navigation input {
+.total-search-input {
   font: inherit;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.2px;
@@ -88,11 +111,11 @@ a {
   outline: none;
 }
 
-.search-navigation input:hover {
+.total-search-input:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-navigation input:focus {
+.total-search-input:focus {
   color: #000000;
 }
 
@@ -197,6 +220,24 @@ a {
 
 .cart-link {
   padding-left: 65px;
+  position: relative;
+}
+
+.cart-link::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 41px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #ebebeb;
 }
 
 .login-link {
@@ -787,30 +828,43 @@ a {
 
 
 .modal-letter {
+  box-sizing: border-box;
   width: 960px;
   height: 553px;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  padding: 100px;
 }
 
-.modal-container {
+
+
+.fotm-flex {
   width: 760px;
   margin: 0 auto;
+
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 label {
   display: block;
+  margin-bottom: 10px;
 }
 
 .user-info {
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
 
 }
 
-.name {
+.name,
+.e-mail {
+  box-sizing: border-box;
+
   width: 360px;
-  height: 50px;
+  padding: 20px;
+
 }

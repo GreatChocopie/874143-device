@@ -29,7 +29,7 @@
             <ul class="user-navigation-list">
               <li class="login-link"><a href="">Войти</a></li>
               <li class="compare-link"><a href="">Сравнить</a></li>
-              <li class="cart-link"><a href="">Корзина</a></li>
+              <li><a class="cart-link" href="">Корзина</a></li>
             </ul>
           </div>
           <!-- Выпадающее меню -->
@@ -132,10 +132,10 @@
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Модальное окно письма</h2>
 
-    <form action="https://echo.htmlacademy.ru" method="POST">
+    <form class="fotm-flex" action="https://echo.htmlacademy.ru" method="POST">
 
 
-      <fieldset class="user-info">
+      <div class="user-info">
         <legend class="visually-hidden">Напишите нам</legend>
         <div>
           <label for="user-name">Ваше имя</label>
@@ -145,12 +145,12 @@
           <label for="user-e-mail">Ваш e-mail</label>
           <input type="email" class="e-mail" name="e-mail" id="user-e-mail" placeholder="email@example.com">
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset>
+      <div>
         <label for="user-letter">Текст письма:</label>
         <textarea id="user-letter" name="letter" rows="5" placeholder="В свободной форме"></textarea>
-      </fieldset>
+      </div>
       <button type="submit" class="button">Отправить</button>
       <button type="button" class="modal-close">Закрыть</button>
 
