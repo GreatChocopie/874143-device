@@ -114,16 +114,12 @@ input[type="radio"].visually-hidden {
     outline: none;
    
     box-sizing: border-box;
-    
+    padding-bottom: 15px;
     width: 355px;
     height: 50px;
-    padding-bottom: 15px;
-    padding-right: 10px;
+    opacity: 0.3;
    padding-left: 40px;
-    background-image: url(../img/search.svg);
-    background-repeat: no-repeat;
-    background-position:  4px 8px;
-       
+
 }
 .total-search-input:focus ~ input[type="submit"] {
     display: block;
@@ -133,7 +129,11 @@ input[type="radio"].visually-hidden {
 
 
 .total-search-input:focus {
-    box-shadow: inset 0 -2px 0 0 #000;    
+    box-shadow: inset 0 -2px 0 0 #000;  
+    opacity: 1;
+}
+.total-search-input:hover {
+    opacity: 0.6;
 }
 
 
@@ -1164,41 +1164,58 @@ label {
     position: relative;
     box-sizing: border-box;
     width: 440px;
-  
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.total-search-form::after {
+     content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 1;
+}
 }
 
-.total-search-form:hover {
-/* border-bottom: 2px solid black;*/
 
+
+
+
+
+
+
+.total-search-input:focus ~ .total-search-submit {
+    display: block;
 }
-
-
-
-
-
-.total-search-submit {
-    padding: 6px 0;
+.total-search-submit  {
+    display: none;
+    padding: 0;
     font: inherit;
     font-size: 15px;
     line-height: 36px;
     color: #000000;
     border-radius: 0;
     outline: 0;
-    position: absolute;
-    top: 0;
-    right: 0px;
+    
     box-sizing: border-box;
     border: 2px solid #000000;
-    padding: 0px;
+  
     height: 50px;
-    display: none;
+    width: 85px;
+    
     background: none;
-    min-width: 85px;
 }
-.total-search-input:focus ~ .total-search-submit,
- .total-search-submit:active {
-    display: block;
-}
+   
 .total-search-submit:hover,
 .total-search-submit:focus {
     background: #000000;
@@ -1208,6 +1225,7 @@ label {
 .total-search-submit:active {
    color: rgba(255,255,255, 0.3);
     background-color: #000;
+    display: block;
     
 }
 
