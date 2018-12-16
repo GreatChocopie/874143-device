@@ -67,7 +67,7 @@
             <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
             <div class="flex-container-3 ">
                 <section class="about-us">
-                    <h2>О нас</h2>
+                    <h2 class="main-info-h2">О нас</h2>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
                         компаниями:</p>
@@ -76,10 +76,10 @@
                         <li><span>Автотрейдинг</span></li>
                         <li><span>ЖелДорЭкспедиция</span></li>
                     </ul>
-                    <div><a class="button" href="">Подробнее о нас</a></div>
+                    <div><a class="button button-info" href="">Подробнее о нас</a></div>
                 </section>
                 <section class="contacts">
-                    <h2>Контакты</h2>
+                    <h2 class="main-info-h2">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
                         Всякое бывает.</p>
                     <div class="contact-map"><a href=""><img src="img/map.png" width="560" height="222" alt="Карта г. Москва, ул. Строителей, 15"></a></div>
@@ -112,13 +112,13 @@
                     </ul>
                 </div>
                 <div class="flex-container-6">
-                    <div></div>
+                    <div class="footer-line"></div>
                     <ul class="social-button-list" aria-label="Социальные сети">
-                        <li><a class="social-button-fb" href="">Наша страница в Фейсбук</a></li>
-                        <li><a class="social-button-inst" href="">Наша страница в Инстаграм</a></li>
-                        <li><a class="social-button-tw" href="">Наша страница в Твитер</a></li>
+                        <li class="social-button"><a class="social-button-fb" href=""><span class="visually-hidden">Наша страница в Фейсбук</span></a></li>
+                        <li class="social-button"><a class="social-button-inst" href=""><span class="visually-hidden">Наша страница в Инстаграм</span></a></li>
+                        <li class="social-button"><a class="social-button-tw" href=""><span class="visually-hidden">Наша страница в Твитер</span></a></li>
                     </ul>
-                    <a class="logo-htmlacademy">
+                    <a class="logo-htmlacademy" href="">
                         <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HtmlAcademy">
                     </a>
                 </div>
@@ -151,18 +151,18 @@
                 <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме"></textarea>
             </div>
             <button type="submit" class="button modal-button">Отправить</button>
-            <button type="button" class="modal-close">Закрыть</button>
+            <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 
         </form>
 
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
-            <img src="img/map-big.png" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
-        </p>
+        
+        <img  src="img/map-big.png" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
+        
         <button class="modal-close" type="button">
-            Закрыть
+           <span class="visually-hidden">Закрыть</span>
         </button>
     </section>
 </body>
