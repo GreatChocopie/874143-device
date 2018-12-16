@@ -53,7 +53,7 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-.main-header-logo {
+.page-main-header-logo {
     display: block;
     position: absolute;
     top: -15px;
@@ -67,6 +67,13 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     color: #000;
     letter-spacing: 0.018em;
+}
+.page-main-header-logo:hover,
+.page-main-header-logo:focus {
+    opacity: 0.6;
+}
+.page-main-header-logo:active {
+    opacity: 0.3;
 }
 
 .main-header-container {
@@ -508,7 +515,7 @@ input[type="radio"].visually-hidden {
 .contacts p {
     color: #464646;
     margin-top: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding-right: 5px;
 }
 
@@ -519,32 +526,55 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     line-height: 40px;
     color: #000000;
-    margin-bottom: 55px;
-    margin-top: 65px;
+    margin-bottom: 50px;
+    margin-top: 55px;
+    padding-top: 10px;
+}
+.company-list li {
+    position: relative;
+   
+}
+.company-list li::before {
+    position: absolute;
+    top: 17px;
+    left: -35px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
 }
 
 .contact-map {
-    margin-bottom: 70px;
+    padding-top: 10px;
+    margin-bottom: 55px;
 
 }
 
 .button {
+    box-sizing: border-box;
+    display: inline-block;
     font-family: "Gilroy";
-    font-size: 18.5px;
+    font-size: 18px;
     font-weight: 800;
     font-style: normal;
     line-height: 23.5px;
-    letter-spacing: 3.7px;
+    letter-spacing: 3.6px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
     background: none;
     border: 0;
+    padding: 14px 0px;
+    margin-left: 2px;
+    
+    background-image: linear-gradient(to top, transparent 0%, transparent 43%, #f0c52e 43%, #f0c52e 58%, transparent 58%, transparent 100%)
 }
 
 .button:hover,
 .button:focus {
     color: #000000;
+    background-color: #f0c52e;
 }
 
 .button:active {
@@ -566,11 +596,11 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     letter-spacing: normal;
     color: #ffffff;
-    margin-top: 93px;
+    margin-top: 75px;
 
 }
 
-.main-footer-logo {
+.page-main-footer-logo {
     font-size: 48px;
     font-family: "Gilroy";
     font-weight: 800;
@@ -579,7 +609,13 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.018em;
     margin-top: 69px;
     display: block;
-
+}
+.page-main-footer-logo:hover,
+.page-main-footer-logo:focus {
+    opacity: 0.6;
+}
+.page-main-footer-logo:active {
+    opacity: 0.3;
 }
 
 
@@ -1053,10 +1089,25 @@ input[type="radio"].visually-hidden {
 
 
 .modal-letter {
+    display: none;
+    box-sizing: border-box;
+    width: 960px;
+    height: 553px;
+    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+    padding: 100px;
+    padding-top: 95px;
+    margin: 0 auto;
     background-color: #ffffff;
+    top: 80px;
+    left: 50%;
+    margin-left:  -480px;
+    
 }
 
 .modal-letter label {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 2px;
     font-family: "Gilroy";
     font-size: 17.5px;
     font-weight: 800;
@@ -1111,14 +1162,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.modal-letter {
-    box-sizing: border-box;
-    width: 960px;
-    height: 553px;
-    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-    padding: 100px;
-    margin: 0 auto;
-}
+
 
 
 
@@ -1132,29 +1176,27 @@ input[type="radio"].visually-hidden {
 
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-}
+
 
 .user-text {
     width: 100%;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
 }
 
 .user-text textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 20px;
+    padding-top: 10px;
     border: none;
 }
 
 .modal-button {
-    margin: 0;
-    font-size: 18px;
-
-    border: none;
-    padding: 0 35px 0 35px;
+    
+    min-width: 200px;
+    
+    
 }
 
 .name,
@@ -1162,8 +1204,11 @@ label {
     box-sizing: border-box;
     border: none;
     width: 360px;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 35px;
 
 }
 
@@ -1383,4 +1428,61 @@ label {
     width: 80px;
     height: 7px;
     background-color: #000000;
+}
+
+.modal {
+    position: fixed;
+}
+
+.contact-button {
+    min-width: 260px;
+}
+
+.button-info {
+    min-width: 260px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/modal-close.svg);
+    background-color: transparent;
+    border: none;
+}
+
+.modal-map {
+    display: none;
+    top: 80px;
+    left: 50%;
+    margin-left: -480px;
+}
+
+.main-header-logo {
+     display: block;
+    position: absolute;
+    top: -15px;
+    left: 59px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 48px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.018em;
+}
+
+.main-footer-logo {
+    font-size: 48px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffc600;
+    letter-spacing: 0.018em;
+    margin-top: 69px;
+    display: block;
 }
