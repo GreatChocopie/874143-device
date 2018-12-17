@@ -1590,14 +1590,19 @@ input[type="radio"].visually-hidden {
     padding-top: 170px;
     background-color: rgba(238,238,238,.7);
 }
+.catalog-actions:hover {
+    z-index: 10;
+}
 
 
 .button-to-cart {
     min-width: 200px;
-
+    display: block;
+   
 }
 
 .bookmark {
+    display: block;
   font-size: 13px;
   color: #000000;
     opacity: 0.5;
@@ -1620,4 +1625,17 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image {
     margin-bottom: 20px;
+    z-index: 3;
 }
+.catalog-item-image:hover,
+.catalog-item-image:focus
+{
+    z-index: 0;
+}
+.catalog-item-image:hover ~ catalog-actions-wrapper {
+    display: block;
+    z-index: 10;
+}
+
+
+
