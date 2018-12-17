@@ -483,6 +483,7 @@ input[type="radio"].visually-hidden {
 .flex-container-3 {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .contacts {
@@ -1417,7 +1418,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-h2 {
-    margin-top: 150px;
+    margin-top: 140px;
     position: relative;
 }
 .info-h2::after {
@@ -1485,4 +1486,18 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.018em;
     margin-top: 69px;
     display: block;
+}
+
+.brands-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.brands-item {
+    width: 260px;
 }
