@@ -1713,3 +1713,57 @@ input[type="radio"].visually-hidden {
 .brands-link-4:focus::before{
     z-index: -1;
 }
+
+.categories-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.categories-item {
+        width: 160px;
+}
+
+.categories-link {
+        display: block;
+    width: 160px;
+    position: relative;
+}
+.categories-link:active .categories-image, .categories-link:active .categories-text {
+    opacity: 0.3;
+}
+.categories-link::before {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+}
+.categories-link:focus::before, .categories-link:hover::before {
+    background-color: #f0c52e;
+}
+
+.categories-image {
+   
+    z-index: 10;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.categories-image2 {
+    margin-top: 22px;
+}
+
+.categories-text {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000;
+    margin-top: 35px;
+    line-height: 1.33;
+}
