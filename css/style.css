@@ -1639,3 +1639,77 @@ input[type="radio"].visually-hidden {
 
 
 
+
+.brands-link-1 {
+    position: relative;
+    display: block;
+}
+.brands-link-1::before {
+    content: "";
+    background-image: url(../img/logo-1-grey.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 260px;
+    height: 100px;
+    
+}
+.brands-link-1:hover::before,
+.brands-link-1:focus::before{
+    z-index: -1;
+}
+
+.brands-link-2 {
+    display: block;
+    position: relative;
+}
+.brands-link-2::before {content: "";
+    background-image: url(../img/logo-2-grey.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 260px;
+    height: 100px;
+}
+.brands-link-2:hover::before,
+.brands-link-2:focus::before{
+    z-index: -1;
+}
+
+.brands-link-3 {
+    display: block;
+    position: relative;
+}
+.brands-link-3::before {content: "";
+    background-image: url(../img/logo-3-grey.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 260px;
+    height: 100px;
+}
+.brands-link-3:hover::before,
+.brands-link-3:focus::before{
+    z-index: -1;
+}
+
+.brands-link-4 {
+    display: block;
+    position: relative;
+}
+.brands-link-4::before {content: "";
+    background-image: url(../img/logo-4-grey.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 260px;
+    height: 100px;
+}
+.brands-link-4:hover::before,
+.brands-link-4:focus::before{
+    z-index: -1;
+}
