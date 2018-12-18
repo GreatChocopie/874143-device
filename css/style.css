@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
 .total-search-input {
     background: none;
     font: inherit;
-    color: rgba(0, 0, 0);
+    color: rgb(0, 0, 0);
     letter-spacing: 0.2px;
     
     margin: 0;
@@ -632,6 +632,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     width: 1160px;
     margin-bottom: 35px;
+    
 }
 
 .footer-user-navigation-list {
@@ -639,11 +640,13 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.15px;
     display: flex;
     width: 483px;
+     margin: 0;
+    padding: 0;
     margin-left: auto;
     justify-content: space-between;
+   
     
-    margin-bottom: 0;
-    padding: 0;
+
 }
 
 .footer-cart-link {
@@ -851,6 +854,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin-bottom: 55px;
     padding-bottom: 5px;
+    align-items: baseline;
 }
 
 .footer-contacts-telephone {
@@ -885,6 +889,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     margin-left: 166px;
+   
 }
 
 .footer-delivery-link {
@@ -1073,6 +1078,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 50px;
 }
 
 
@@ -1252,12 +1258,6 @@ input[type="radio"].visually-hidden {
     background-position: 50% 50%;
     opacity: 1;
 }
-}
-
-
-
-
-
 
 
 
@@ -1380,7 +1380,7 @@ input[type="radio"].visually-hidden {
 .social-button-inst:active {
     opacity: 0.1;
 }
-}
+
 
 
 
@@ -1509,6 +1509,7 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.018em;
     
     display: block;
+
 }
 
 .brands-list {
@@ -1540,25 +1541,14 @@ input[type="radio"].visually-hidden {
 .catalog-item-image-new {
     position: relative;
 }
-.catalog-item-image-new::after {
-  
-      position: absolute;
-    top: 25px;
-    right: 25px;
-    content: "";
-    color: rgba(0, 0, 0, 0.1);
-    width: 60px;
-    height: 60px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%; 
-}
+
 .catalog-item-image-new::before {
     position: absolute;
-    top: 45px;
-    right: 40px;
+    top: 30px;
+    right: 25px;
     content: "NEW";
-    width: 32px;
-  height: 11px;
+    width: 55px;
+  height: 55px;
   font-family: Gilroy;
   font-size: 14px;
   font-weight: 800;
@@ -1568,7 +1558,11 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.7px;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
-  
+  border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
