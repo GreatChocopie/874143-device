@@ -1809,9 +1809,10 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 480px;
+    width: 560px;
+/*    width: 480px;*/
     margin-left: auto;
-    padding-right: 80px;
+/*    padding-right: 80px;*/
 }
 
 .slider-header {
@@ -1825,6 +1826,7 @@ input[type="radio"].visually-hidden {
     margin-top: 85px;
     margin-bottom: 20px;
     padding: 0;
+    width: 560px;
 }
 .slider-header::before {
     content: "";
@@ -1840,6 +1842,7 @@ input[type="radio"].visually-hidden {
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 40px;
+    width: 480px;
 }
 
 .slider-table {
