@@ -56,8 +56,15 @@
         <main class="container">
             <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
             <section class="slider-content">
-
-                <div class="slider-slide1" >
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+                 <div class="slider-controls">
+          <label class="slider-radio slider-radio-1" for="product-1"><span class="visually-hidden">Первый</span></label>
+                     <label class="slider-radio slider-radio-2" for="product-2"><span class="visually-hidden">Второй</span></label>
+                     <label class="slider-radio slider-radio-3" for="product-3"><span class="visually-hidden">Третий</span></label>
+        </div>
+                <div class="slider-slide slider-slide1" >
                     <figure class="slider-figure">
                         <div class="slider-image-container"> <img class="slider-image" src="img/slider-1.png" alt="" width="384" height="486"></div>
                         <figcaption class="slider-text-container">
@@ -81,7 +88,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="slider-slide2 visually-hidden">
+                <div class="slider-slide slider-slide2">
                      <figure class="slider-figure">
                         <div class="slider-image-container"> <img class="slider-image" src="img/slider-2.png" alt="" width="345" height="485"></div>
                         <figcaption class="slider-text-container">
@@ -99,7 +106,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="slider-slide3 visually-hidden">
+                <div class="slider-slide slider-slide3">
                     <figure class="slider-figure">
                         <div class="slider-image-container"> <img src="img/slider-3.png" alt="" width="384" height="486"></div>
                         <figcaption class="slider-text-container">
@@ -120,11 +127,13 @@
                         </figcaption>
                     </figure>
                 </div>
+<!--
                 <div class="slider-controls">
                     <div class="slider-radio-checked"></div>
                     <div class="slider-radio"></div>
                     <div class="slider-radio"></div>
                 </div>
+-->
             </section>
             <section class="categories">
             <div class="container">
