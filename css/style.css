@@ -1823,7 +1823,8 @@ input[type="radio"].visually-hidden {
     color: #000000;
     position: relative;
     margin-top: 85px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    padding: 0;
 }
 .slider-header::before {
     content: "";
@@ -1837,24 +1838,27 @@ input[type="radio"].visually-hidden {
 
 .slider-paragraph {
     padding-top: 0px;
-    margin-top: -10px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .slider-table {
         width: 100%;
-    margin-top: 30px;
+    margin-top: 0px;
     border-collapse: collapse;
-    display: flex;
-/*    flex-direction: column;*/
+display: table;
+    height: 100px;
+    
 }
 
 .slider-button {
     display: block;
     align-self: center;
     min-width: 220px;
-    margin-top: -15px;
-    margin-left:   0;
+    margin-top: 0px;
+    margin-left:   0px;
+    margin-bottom: 50px;
+    
     
 }
 
@@ -1866,30 +1870,40 @@ input[type="radio"].visually-hidden {
     color: #000000;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
-    display: flex;
-    order: 1;
+   
+    display: table-header-group;
+   
 }
 
 .slider-table-header {
     width: 100%;
     font-size: 13px;
     line-height: 20px;
-    display: flex;
-   order: 2;
+    display: table-footer-group;
+   
+    
+    
+
 }
 
+
 .slider-table-header-td {
+   
     padding: 0;
     padding-right: 85px;
+    
+     height: 50px;
+    
 }
 .slider-table-header-td:last-child {
     padding: 0;
+    
 }
 
 .slider-table-data-td {
     padding: 0;
     padding-right: 80px;
+    
     
 }
 .slider-table-data-td:last-child {
@@ -1967,3 +1981,9 @@ input[type="radio"].visually-hidden {
   border: 1px solid #000000;
   border-radius: 50%;
 }
+
+.slider-table-thead {
+    display: flex;
+}
+
+
