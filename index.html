@@ -52,8 +52,8 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <main class="container">
+        <main>
+             <div class="container">
             <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
             <section class="slider-content">
                 <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -127,16 +127,10 @@
                         </figcaption>
                     </figure>
                 </div>
-<!--
-                <div class="slider-controls">
-                    <div class="slider-radio-checked"></div>
-                    <div class="slider-radio"></div>
-                    <div class="slider-radio"></div>
-                </div>
--->
             </section>
-            <section class="categories">
+            </div>
             <div class="container">
+            <section class="categories">
                 <h2 class="visually-hidden">Товары</h2>
                 <ul class="categories-list">
                     <li class="categories-item">
@@ -176,8 +170,39 @@
                     </a>
                     </li>
                 </ul>
-            </div>
             </section>
+            </div>
+            <section class="services">
+            <div class="container">
+                <div class="services-list-slides-container">
+                    <h2 class="visually-hidden">Наши услуги</h2>
+                 <input class="visually-hidden" type="radio" id="services-product-1" name="serv" checked>
+        <input class="visually-hidden" type="radio" id="services-product-2" name="serv">
+        <input class="visually-hidden" type="radio" id="services-product-3" name="serv">
+                    <div class="services-list">
+                        <!-- TODO у ul сделать before                    -->
+                        <label  for="services-product-1" class="button service-button service-button-1">Доставка</label>
+                        <label  for="services-product-2" class="button service-button service-button-2">Гарантия</label>
+                        <label  for="services-product-3" class="button service-button service-button-3">Кредит</label>
+                    </div>
+                    <div class="slides-container">
+                        <div class="services-slide services-slide-shipment" >
+                            <h2 class="services-header">Доставка</h2>
+                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        </div>
+                        <div class="services-slide services-slide-warranty">
+                            <h2 class="services-header">Гарантия</h2>
+                            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                        </div>
+                        <div class="services-slide services-slide-credit">
+                            <h2 class="services-header">Кредит</h2>
+                            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+             <div class="container">
             <section class="brands container">
             <h2 class="visually-hidden">Производители</h2>
                 <ul class="brands-list">
@@ -203,6 +228,8 @@
                     </li>
                 </ul>
             </section>
+            </div>
+            <div class="container">
             <div class="flex-container-3 ">
                 <section class="about-us">
                     <h2 class="info-h2">О нас</h2>
@@ -224,8 +251,8 @@
                     <div><a class="button contact-button" href="">Напишите нам</a></div>
                 </section>
             </div>
+            </div>
         </main>
-    </div>
 
     <footer class="main-footer">
         <div class="wrapper">
