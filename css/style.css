@@ -1414,6 +1414,9 @@ input[type="radio"].visually-hidden {
 .logo-htmlacademy:focus {
     opacity: 0.6;
 }
+.logo-htmlacademy:active {
+    opacity: 0.3;
+}
 
 .footer-line {
     position: relative;
