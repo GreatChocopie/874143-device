@@ -119,10 +119,6 @@
                 </form>
 
             </section>
-            <!-- <section class="sorting">
-        <h2 class="visually-hidden">Сортировка</h2>
-        
-      </section> -->
             <section class="catalog">
                 <div class="catalog-h2-wrapper">
                     <h2 class="catalog-h2">Сортировка:</h2>
@@ -133,10 +129,11 @@
                         </li>
                         <li><a class="catalog-sortimg-item" href="">По популярности</a>
                         </li>
+
                     </ul>
                     <ul class="catalog-sortimg-links">
-                        <li class="catalog-sortimg-link-up"></li>
-                        <li class="catalog-sortimg-link-down"></li>
+                        <li><a class="catalog-sortimg-link-up" href=""></a></li>
+                        <li><a class="catalog-sortimg-link-down-current" href=""></a></li>
                     </ul>
                 </div>
                 <div class="page-catalog-wrapper">
@@ -194,10 +191,16 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="catalog-pagimator">
+                        <a class="catalog-paginator-prev" href="#prev">Назад</a>
+                        <ul class="catalog-paginator-list">
+                            <li><a href="#1" class="catalog-paginator-item-current">1</a></li>
+                            <li><a href="#2" class="catalog-paginator-item">2</a></li>
+                            <li><a href="#3" class="catalog-paginator-item">3</a></li>
+                        </ul>
+                        <a class="catalog-paginator-next" href="#next">Вперёд</a>
+                    </div>
                 </div>
-            </section>
-            <section>
-                <!-- Здесь будет форма ПЕРЕКЛЮЧАЛКА-->
             </section>
         </div>
 
@@ -227,7 +230,7 @@
                     <p class="footer-contacts-telephone" aria-label="Телефон:">Тел.: +7 (495) 495-95-95</p>
                 </div>
                 <div class="flex-container-6">
-                    <div></div>
+                    <div class="footer-line"></div>
                     <ul class="social-button-list" aria-label="Социальные сети">
                         <li class="social-button">
                             <a class="social-button-fb" href="">
