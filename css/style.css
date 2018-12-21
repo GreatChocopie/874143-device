@@ -483,6 +483,7 @@ input[type="radio"].visually-hidden {
 .flex-container-3 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 75px;
     
 }
 
@@ -601,9 +602,6 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     letter-spacing: normal;
     color: #ffffff;
-    margin-top: 75px;
-    
-
 }
 
 .page-main-footer-logo {
@@ -1003,16 +1001,7 @@ input[type="radio"].visually-hidden {
     border: 0;
 }
 
-.filter h2 {
-    font-family: "Gilroy";
-    font-size: 17.5px;
-    font-weight: 800;
-    font-style: normal;
-    line-height: 24.5px;
-    letter-spacing: 3.5px;
-    color: #000000;
-    text-transform: uppercase;
-}
+
 
 .filter legend {
     font-family: "Gilroy";
@@ -1318,21 +1307,8 @@ input[type="radio"].visually-hidden {
     background-position: 50% 50%;
     opacity: 1;
 }
-.breadcrubs-item::before {
-    content: "";
 
-    position: absolute;
-    top: 7px;
-    left: -25px;
-
-    width: 12px;
-    height: 12px;
-
-    background-image: url("../img/nav-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 1;
-}
+*/
 
 
 
@@ -2196,4 +2172,105 @@ display: table;
 
 .brands {
     margin-bottom: 55px;
+}
+
+.filter-h2-wrapper {
+    width: 100%;
+    margin-left: auto;
+    background-color: peachpuff;
+   display: flex;
+    
+    
+}
+
+.filter-h2 {
+     font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+     text-transform: uppercase;
+    margin: 0;
+    margin-left: auto;
+    min-width: 270px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.catalog-h2-wrapper {
+     width: 100%;
+    background-color:  #efefef;
+   display: flex;
+    margin-right: auto;
+    margin-bottom: 70px;
+    
+}
+
+.catalog-h2 {
+    font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+     text-transform: uppercase;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin: 0;
+    margin-left: 73px;
+    margin-right: 55px;
+  
+}
+
+.catalog-sorting {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 285px;
+    margin-right: 235px;
+    position: relative
+}
+
+
+
+.catalog-sortimg-item {
+    color:rgba(0, 0, 0, 0.3);
+}
+.catalog-sortimg-item:hover,
+.catalog-sortimg-item:focus
+{
+    color:rgba(0, 0, 0, 0.6);
+}
+.catalog-sortimg-item:active {
+    color: #000000;
+}
+
+.catalog-sortimg-item-current {
+    color: #000000;
+}
+
+.catalog-sortimg-links {
+    
+     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    margin-right: auto;
+}
+
+.catalog-sortimg-link-up {
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/icon-up-dir.svg);
+}
+
+.catalog-sortimg-link-down {
+     width: 10px;
+    height: 10px;
+    background-image: url(../img/icon-down-dir.svg);
 }
