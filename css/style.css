@@ -2455,9 +2455,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-name {
-        width: 100%;
+    width: 100%;
     padding: 12px 0 0;
     border-top: 2px solid #000000;
+    margin-bottom: 15px;
 }
 
 
@@ -2511,4 +2512,89 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked+label:active::before {
     background-image: url(../img/svg-icons/radio-off.svg);
     opacity: 1;
+}
+
+.range-controls {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.range-scale {
+    height: 2px;
+    background-color: #dbdbdb;
+}
+
+.range-bar {
+    height: 2px;
+    background-color: #91c92f;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    height: 22px;
+    border-radius: 50%;
+    background-image: url(../img/filter-button.svg);
+    cursor: pointer;
+}
+.range-toggle:active {
+    background-image: url(../img/filter-button-2.svg);
+    position: absolute;
+    top: -9px;
+    width: 22px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+
+
+.range-toggle-max {
+     left: 60%;
+}
+
+.price-controls {
+        display: flex;
+}
+.price-controls label {
+    font-family: "Gilroy","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgba(0,0,0,0.2);
+}
+
+.price-min {
+        display: flex;
+}
+
+.input-min-price {
+    font-family: "Gilroy","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgba(0,0,0,0.2);
+    width: 70px;
+    margin: 0;
+    padding-left: 5px;
+    background: 0 ;
+    border: 0;
+}
+
+.price-max {
+        display: flex;
+}
+
+.input-max-price {
+    font-family: "Gilroy","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgba(0,0,0,0.2);
+        width: 70px;
+    margin: 0;
+    padding-left: 5px;
+    background: 0 0;
+    border: 0;
 }
