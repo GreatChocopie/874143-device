@@ -1,14 +1,16 @@
 @font-face {
     font-family: "Gilroy";
-    src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroylight.woff2") format("woff2"), url("../font/Gilroylight.woff") format("woff"), url("../fonts/Gilroylight.ttf") format("truetype");
-    font-weight: 300;
+    src: url("../font/gilroyextrabold.woff2") format("woff2"),
+        url("../font/gilroyextrabold.woff") format("woff");
+    font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gilroy";
-    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/Gilroyextrabold.woff2") format("woff2"), url("../fonts/Gilroyextrabold.woff") format("woff"), url("../fonts/Gilroyextrabold.ttf") format("truetype");
-    font-weight: 800;
+    src: url("../font/gilroylight.woff2") format("woff2"),
+        url("../font/gilroylight.woff") format("woff");
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -71,6 +73,7 @@ input[type="radio"].visually-hidden {
 .page-main-header-logo:active {
     opacity: 0.3;
 }
+
 
 .main-header-container {
     width: 1160px;
@@ -876,8 +879,10 @@ input[type="radio"].visually-hidden {
     line-height: 47.5px;
     letter-spacing: 0.48px;
     color: #000000;
-    margin-left: 61px;
-    margin-top: 44px;
+    margin-left: 60px;
+    margin-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 25px;
 }
 
 .breadcrumbs {
@@ -890,9 +895,8 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.14px;
     padding: 0;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-left: 61px;
-    margin-top: 29px;
     display: flex;
     justify-content: space-between;
     width: 381px;
@@ -934,9 +938,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-fieldset {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     padding: 0;
     border: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .filter legend {
@@ -947,6 +953,7 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     letter-spacing: 0.18px;
     color: #000000;
+
 }
 
 .filter ul {
@@ -2269,6 +2276,7 @@ input[type="radio"].visually-hidden {
     padding: 12px 0 0;
     border-top: 2px solid #000000;
     margin-bottom: 15px;
+    display: block;
 }
 
 .filter-input + label {
@@ -2429,4 +2437,8 @@ input[type="radio"].visually-hidden {
 .slider-header-3 {
     display: block;
     max-width: 560px;
+}
+
+.range-filter {
+    width: 100%;
 }
