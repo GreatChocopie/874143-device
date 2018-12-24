@@ -37,12 +37,12 @@
                             <li class="catalog-link"><a class="header-catalog-list" href="">Каталог товаров</a>
                                 <div class="hidden-wrapper">
                                     <ul class="catalog-menu-list-hidden">
-                                        <li><a href="">Виртуальная реальность</a></li>
-                                        <li><a href="">Фитнес-браслеты</a></li>
-                                        <li><a href="">Квадрокоптеры</a></li>
-                                        <li><a href="">Моноподы для селфи</a></li>
-                                        <li><a href="">Умные часы </a></li>
-                                        <li><a href="">Экшн-камеры</a></li>
+                                        <li><a href="catalog.html">Виртуальная реальность</a></li>
+                                        <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                                        <li><a href="catalog.html">Квадрокоптеры</a></li>
+                                        <li><a href="catalog.html">Моноподы для селфи</a></li>
+                                        <li><a href="catalog.html">Умные часы </a></li>
+                                        <li><a href="catalog.html">Экшн-камеры</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -77,8 +77,8 @@
                     <h2 class="filter-h2">Фильтр:</h2>
                 </div>
                 <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-                    <fieldset class="filter-fieldset">
-                        <div class="filter-fieldset">
+                    <div class="filter-fieldset">
+                        <fieldset class="filter-fieldset">
                             <legend class="filter-name">Стоимость</legend>
                             <div class="range-filter">
                                 <div class="range-controls">
@@ -99,11 +99,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
                     <fieldset class="filter-fieldset">
                         <legend class="filter-name">Цвет</legend>
-                        <ul>
+                        <ul class="filter-color-list">
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-color-black" checked>
                                 <label for="filter-color-black">Черный</label>
@@ -124,6 +124,7 @@
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-color-pink">
                                 <label for="filter-color-pink">Розовый</label>
                             </li>
+
                         </ul>
                     </fieldset>
                     <fieldset class="filter-fieldset">
@@ -215,7 +216,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="catalog-pagimator">
+                    <div class="catalog-paginator">
                         <a class="catalog-paginator-prev" href="#prev">Назад</a>
                         <ul class="catalog-paginator-list">
                             <li><a class="catalog-paginator-item-current">1</a></li>

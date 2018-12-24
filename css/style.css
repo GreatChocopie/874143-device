@@ -371,7 +371,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-menu-list-hidden {
     list-style: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -468,7 +468,7 @@ input[type="radio"].visually-hidden {
 
 .about-us h2,
 .contacts h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47.5px;
     font-weight: 800;
     font-style: normal;
@@ -488,7 +488,7 @@ input[type="radio"].visually-hidden {
 
 .company-list {
     list-style: none;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 40px;
@@ -522,7 +522,7 @@ input[type="radio"].visually-hidden {
 .button {
     box-sizing: border-box;
     display: inline-block;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -535,7 +535,7 @@ input[type="radio"].visually-hidden {
     border: 0;
     padding: 14px 0px;
     margin-left: 2px;
-    background-image: linear-gradient(to top, transparent 0%, transparent 43%, #f0c52e 43%, #f0c52e 58%, transparent 58%, transparent 100%)
+    background-image: linear-gradient(to top, transparent 0%, transparent 41%, #f0c52e 41%, #f0c52e 60%, transparent 60%, transparent 100%)
 }
 
 .button:hover,
@@ -895,7 +895,7 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.14px;
     padding: 0;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     margin-left: 61px;
     display: flex;
     justify-content: space-between;
@@ -931,14 +931,14 @@ input[type="radio"].visually-hidden {
 .filter-form {
     width: 201px;
     margin: 0;
-    margin-top: 70px;
+    margin-top: 65px;
     margin-left: auto;
     padding-right: 68px;
     padding-left: 80px;
 }
 
 .filter-fieldset {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     padding: 0;
     border: 0;
     display: flex;
@@ -972,6 +972,7 @@ input[type="radio"].visually-hidden {
 .filter-button {
     margin-left: auto;
     min-width: 200px;
+    margin-top: 15px;
 }
 
 .filter label:disabled {
@@ -998,6 +999,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .catalog-item {
@@ -1412,7 +1414,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image-new::before {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 25px;
     content: "NEW";
     width: 55px;
@@ -2064,6 +2066,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     margin: 0;
     margin-left: auto;
+
     min-width: 270px;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -2098,8 +2101,8 @@ input[type="radio"].visually-hidden {
     padding: 0;
     justify-content: space-between;
     align-items: center;
-    min-width: 285px;
-    margin-right: 235px;
+    min-width: 290px;
+    margin-right: 230px;
     position: relative
 }
 
@@ -2172,13 +2175,14 @@ input[type="radio"].visually-hidden {
     display: block;
 }
 
-.catalog-pagimator {
+.catalog-paginator {
     width: 760px;
     display: flex;
     justify-content: space-between;
     background-color: #efefef;
+    min-height: 70px;
     box-sizing: border-box;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .catalog-paginator-prev {
@@ -2340,7 +2344,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
     position: relative;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -2441,4 +2445,11 @@ input[type="radio"].visually-hidden {
 
 .range-filter {
     width: 100%;
+}
+
+
+
+.filter .filter-color-list {
+    margin-bottom: 20px;
+
 }
