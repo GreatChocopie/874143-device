@@ -1392,11 +1392,14 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
 }
 
 .brands-item {
     width: 260px;
+    margin-right: 40px;
+}
+.brands-item:last-child {
+    margin-right: 0px;
 }
 
 .catalog-item-name {
@@ -1577,7 +1580,6 @@ input[type="radio"].visually-hidden {
 .categories-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
@@ -1585,6 +1587,10 @@ input[type="radio"].visually-hidden {
 
 .categories-item {
     width: 160px;
+    margin-right: 40px;
+}
+.categories-item:last-child {
+    margin-right: 0;
 }
 
 .categories-link {
@@ -2322,7 +2328,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox:checked + label:active::before {
-    background-image: url(../img/svg-icons/checkbox-off.svg);
+    background-image: url(../img/checkbox-off.svg);
     opacity: 1;
 }
 
@@ -2339,7 +2345,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-radio:checked + label:active::before {
-    background-image: url(../img/svg-icons/radio-off.svg);
+    background-image: url(../img/radio-off.svg);
     opacity: 1;
 }
 
