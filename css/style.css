@@ -22,6 +22,7 @@ body {
     font-style: normal;
     line-height: 30px;
     font-weight: 300;
+    letter-spacing: 0.2px;
     color: #000000;
     background-color: #ffffff;
 }
@@ -475,7 +476,7 @@ input[type="radio"].visually-hidden {
     line-height: 47.5px;
     letter-spacing: 0.5px;
     color: #000000;
-    margin-bottom: 40px;
+
 }
 
 .about-us p,
@@ -484,6 +485,7 @@ input[type="radio"].visually-hidden {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-right: 5px;
+    letter-spacing: normal;
 }
 
 .company-list {
@@ -526,14 +528,14 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
-    line-height: 23.5px;
+    line-height: 24px;
     letter-spacing: 3.6px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
     background: none;
     border: 0;
-    padding: 14px 0px;
+    padding: 15px 0px;
     margin-left: 2px;
     background-image: linear-gradient(to top, transparent 0%, transparent 41%, #f0c52e 41%, #f0c52e 60%, transparent 60%, transparent 100%);
     cursor: pointer;
@@ -554,7 +556,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     background-color: #464646;
     height: 323px;
-    padding-top: 65px;
+    padding-top: 67px;
 }
 
 .main-footer {
@@ -601,6 +603,7 @@ input[type="radio"].visually-hidden {
     width: 483px;
     margin: 0;
     padding: 0;
+        margin-top: -5px;
     margin-left: auto;
     justify-content: space-between;
 }
@@ -883,7 +886,7 @@ input[type="radio"].visually-hidden {
     margin-left: 60px;
     margin-top: 40px;
     padding-bottom: 0;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .breadcrumbs {
@@ -898,6 +901,7 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
     margin-bottom: 45px;
     margin-left: 61px;
+    
     display: flex;
     justify-content: space-between;
     width: 381px;
@@ -944,6 +948,7 @@ input[type="radio"].visually-hidden {
     border: 0;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .filter legend {
@@ -973,7 +978,7 @@ input[type="radio"].visually-hidden {
 .filter-button {
     margin-left: auto;
     min-width: 200px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .filter label:disabled {
@@ -1000,7 +1005,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: -18px;
 }
 
 .catalog-item {
@@ -1310,6 +1315,7 @@ input[type="radio"].visually-hidden {
 
 .info-h2 {
     position: relative;
+    margin-bottom: 45px;
 }
 
 .info-h2::after {
@@ -1636,6 +1642,10 @@ input[type="radio"].visually-hidden {
     color: #000000;
     margin-top: 35px;
     line-height: 1.33;
+    /* Для pixel-perfect надо 0.6 но зеплин говорит надо 0.2
+    Считаем, что надо 0.2, разница в рендеринге браузера-поерационки
+    */
+      letter-spacing: 0.2px;
 }
 
 .slider-content {
@@ -1699,10 +1709,14 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: 0.5px;
+    /* Если сделать letter-spacing 0.8, то попадем в pixel-perfect
+    но в зеплине указан letter-spacing 0.5. Лучше ориентироваться на зеплин,
+    дизайнер знал, какой letter-spacing нужен, а у нас различие из-за рендеринга шрифта
+    в браузерах-операционках*/
     color: #000000;
     position: relative;
-    margin-top: 85px;
-    margin-bottom: 10px;
+    margin-top: 87px;
+    margin-bottom: 7px;
     padding: 0;
     width: 560px;
 }
@@ -1720,8 +1734,8 @@ input[type="radio"].visually-hidden {
 .slider-paragraph {
     padding-top: 0px;
     margin-top: 0px;
-    margin-bottom: 25px;
-    width: 480px;
+    margin-bottom: 20px;
+    width: 485px;
 }
 
 .slider-table {
@@ -1737,7 +1751,7 @@ input[type="radio"].visually-hidden {
     min-width: 220px;
     margin-top: 0px;
     margin-left: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .slider-table-data {
@@ -1760,7 +1774,7 @@ input[type="radio"].visually-hidden {
 
 .slider-table-header-td {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 17px;
     padding: 0;
     min-width: 150px;
 }
@@ -1773,8 +1787,8 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
     position: absolute;
-    top: 315px;
-    right: 80px;
+    top: 322px;
+    right: 81px;
     z-index: 5;
     display: flex;
     justify-content: space-between;
@@ -2189,7 +2203,7 @@ input[type="radio"].visually-hidden {
     background-color: #efefef;
     min-height: 70px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
 }
 
 .catalog-paginator-prev {
@@ -2467,3 +2481,31 @@ input[type="radio"].visually-hidden {
 }
 
 
+
+.slider-table-header-td1 {
+    
+    display: inline-block;
+    margin-top: 17px;
+    padding: 0;
+    min-width: 160px;
+}
+
+.slider-table-data-td1 {
+        display: inline-block;
+    padding: 0;
+    min-width: 160px;
+}
+
+.slider-table-data-td2 {
+        display: inline-block;
+    padding: 0;
+    min-width: 140px;
+}
+
+.slider-table-header-td2 {
+        display: inline-block;
+    margin-top: 17px;
+    padding: 0;
+    min-width: 140px;
+
+}
