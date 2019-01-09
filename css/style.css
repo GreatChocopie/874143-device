@@ -14,6 +14,43 @@
     font-style: normal;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -517,6 +554,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-map {
+    display: block;
     padding-top: 10px;
     margin-bottom: 55px;
 }
@@ -603,7 +641,7 @@ input[type="radio"].visually-hidden {
     width: 483px;
     margin: 0;
     padding: 0;
-        margin-top: -5px;
+    margin-top: -5px;
     margin-left: auto;
     justify-content: space-between;
 }
@@ -901,7 +939,7 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
     margin-bottom: 45px;
     margin-left: 61px;
-    
+
     display: flex;
     justify-content: space-between;
     width: 381px;
@@ -1343,6 +1381,8 @@ input[type="radio"].visually-hidden {
 
 .modal-close {
     position: absolute;
+    top: 22px;
+    right: 22px;
     width: 55px;
     height: 55px;
     background-image: url(../img/modal-close.svg);
@@ -1350,6 +1390,7 @@ input[type="radio"].visually-hidden {
     border: none;
     opacity: 0.6;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .modal-close:hover,
@@ -1363,9 +1404,11 @@ input[type="radio"].visually-hidden {
 
 .modal-map {
     display: none;
-    top: 80px;
+    top: 65px;
     left: 50%;
     margin-left: -480px;
+    box-sizing: border-box;
+    width: 960px;
 }
 
 .main-header-logo {
@@ -1404,6 +1447,7 @@ input[type="radio"].visually-hidden {
     width: 260px;
     margin-right: 40px;
 }
+
 .brands-item:last-child {
     margin-right: 0px;
 }
@@ -1511,7 +1555,7 @@ input[type="radio"].visually-hidden {
     left: 0;
     z-index: 2;
     width: 260px;
-    height: 100px;  
+    height: 100px;
 }
 
 
@@ -1595,6 +1639,7 @@ input[type="radio"].visually-hidden {
     width: 160px;
     margin-right: 40px;
 }
+
 .categories-item:last-child {
     margin-right: 0;
 }
@@ -1645,7 +1690,7 @@ input[type="radio"].visually-hidden {
     /* Для pixel-perfect надо 0.6 но зеплин говорит надо 0.2
     Считаем, что надо 0.2, разница в рендеринге браузера-поерационки
     */
-      letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
 }
 
 .slider-content {
@@ -2476,14 +2521,14 @@ input[type="radio"].visually-hidden {
 }
 
 .map-modal-close {
-     top: 45px;
+    top: 45px;
     right: 40px;
 }
 
 
 
 .slider-table-header-td1 {
-    
+
     display: inline-block;
     margin-top: 17px;
     padding: 0;
@@ -2491,21 +2536,46 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-table-data-td1 {
-        display: inline-block;
+    display: inline-block;
     padding: 0;
     min-width: 160px;
 }
 
 .slider-table-data-td2 {
-        display: inline-block;
+    display: inline-block;
     padding: 0;
     min-width: 140px;
 }
 
 .slider-table-header-td2 {
-        display: inline-block;
+    display: inline-block;
     margin-top: 17px;
     padding: 0;
     min-width: 140px;
 
+}
+
+
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+
+.modal-map img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
