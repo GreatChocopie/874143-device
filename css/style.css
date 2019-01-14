@@ -1472,7 +1472,7 @@ input[type="radio"].visually-hidden {
     content: "NEW";
     width: 55px;
     height: 55px;
-    font-family: Gilroy;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 800;
     font-style: normal;
