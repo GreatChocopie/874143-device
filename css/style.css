@@ -569,6 +569,7 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     letter-spacing: 3.6px;
     text-align: center;
+    vertical-align: middle;
     color: #000000;
     text-transform: uppercase;
     background: none;
@@ -1819,6 +1820,7 @@ input[type="radio"].visually-hidden {
 
 .slider-table-header-td {
     display: inline-block;
+    vertical-align: middle;
     margin-top: 17px;
     padding: 0;
     min-width: 150px;
@@ -1826,6 +1828,7 @@ input[type="radio"].visually-hidden {
 
 .slider-table-data-td {
     display: inline-block;
+    vertical-align: middle;
     padding: 0;
     min-width: 150px;
 }
@@ -1850,6 +1853,7 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
     border-radius: 50%;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .slider-radio {
@@ -1859,6 +1863,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+    vertical-align: middle;
 }
 
 .slider-radio::after {
@@ -1944,6 +1949,7 @@ input[type="radio"].visually-hidden {
     line-height: 23.5px;
     letter-spacing: 3.6px;
     text-align: center;
+    vertical-align: middle;
     color: #000000;
     text-transform: uppercase;
     border: 0;
@@ -1951,7 +1957,6 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin-bottom: 25px;
     position: relative;
-    text-align: center;
     z-index: 1;
     min-width: 160px;
 }
@@ -2047,6 +2052,7 @@ input[type="radio"].visually-hidden {
     line-height: 23.5px;
     letter-spacing: 3.6px;
     text-align: center;
+    vertical-align: middle;
     color: #000000;
     text-transform: uppercase;
     background: none;
@@ -2070,6 +2076,7 @@ input[type="radio"].visually-hidden {
     line-height: 23.5px;
     letter-spacing: 3.6px;
     text-align: center;
+    vertical-align: middle;
     color: #000000;
     text-transform: uppercase;
     background: none;
@@ -2078,7 +2085,6 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin-bottom: 25px;
     position: relative;
-    text-align: center;
     z-index: 1;
     min-width: 278px;
     background-color: black;
@@ -2093,6 +2099,7 @@ input[type="radio"].visually-hidden {
     line-height: 23.5px;
     letter-spacing: 3.6px;
     text-align: center;
+    vertical-align: middle;
     color: #000000;
     text-transform: uppercase;
     background: none;
@@ -2530,6 +2537,7 @@ input[type="radio"].visually-hidden {
 .slider-table-header-td1 {
 
     display: inline-block;
+    vertical-align: middle;
     margin-top: 17px;
     padding: 0;
     min-width: 160px;
@@ -2537,18 +2545,21 @@ input[type="radio"].visually-hidden {
 
 .slider-table-data-td1 {
     display: inline-block;
+    vertical-align: middle;
     padding: 0;
     min-width: 160px;
 }
 
 .slider-table-data-td2 {
     display: inline-block;
+    vertical-align: middle;
     padding: 0;
     min-width: 140px;
 }
 
 .slider-table-header-td2 {
     display: inline-block;
+    vertical-align: middle;
     margin-top: 17px;
     padding: 0;
     min-width: 140px;
