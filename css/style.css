@@ -1960,6 +1960,29 @@ input[type="radio"].visually-hidden {
     z-index: 1;
     min-width: 160px;
 }
+.service-button:active {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 23.5px;
+    letter-spacing: 3.6px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    padding: 10px 130px 7px 10px;
+    display: inline-block;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+    min-width: 278px;
+    background-color: black;
+    color: #f7e184;
+    
+}
 
 .services-slide-shipment {
     padding-right: 310px;
