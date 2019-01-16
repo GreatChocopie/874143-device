@@ -1917,6 +1917,8 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
+*/
+
 .slider-table-thead {
     display: flex;
 }
@@ -2681,3 +2683,6 @@ input[type="radio"].visually-hidden {
     padding-left: 14px;
     padding-right: 14px;
 }
+
+
+
