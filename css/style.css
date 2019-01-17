@@ -2119,6 +2119,7 @@ input[type="radio"].visually-hidden {
 
 
 
+
 #services-product-2:checked ~ .services-list .service-button-2 {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
@@ -2229,9 +2230,10 @@ input[type="radio"].visually-hidden {
     padding: 0;
     justify-content: space-between;
     align-items: center;
-    min-width: 290px;
+    width: 290px;
     margin-right: 230px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .catalog-sortimg-item {
@@ -2696,4 +2698,8 @@ input[type="radio"].visually-hidden {
 .catalog-paginator-list-item {
     padding-left: 14px;
     padding-right: 14px;
+}
+
+.breadcrumbs-current {
+     padding-right: 37px;
 }
