@@ -1931,6 +1931,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
+
 .slider-table-thead {
     display: flex;
 }
@@ -2142,6 +2143,7 @@ input[type="radio"].visually-hidden {
     background-color: black;
     color: #f7e184;
 }
+
 
 #services-product-3:checked ~ .services-list .service-button-3 {
     font-family: "Gilroy", "Arial", sans-serif;
@@ -2702,4 +2704,9 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-current {
      padding-right: 37px;
+}
+
+.slider-table-td {
+    box-sizing: border-box;
+    padding-right: 5px;
 }
