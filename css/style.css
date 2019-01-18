@@ -1986,8 +1986,7 @@ input[type="radio"].visually-hidden {
     z-index: 1;
     min-width: 160px;
 }
-.service-button:active,
-.service-button:focus
+.service-button:active
 {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
