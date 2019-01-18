@@ -1987,7 +1987,8 @@ input[type="radio"].visually-hidden {
     min-width: 160px;
 }
 .service-button:active,
-.service-button:focus {
+.service-button:focus
+{
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -2010,6 +2011,7 @@ input[type="radio"].visually-hidden {
     color: #f7e184;
     
 }
+
 
 .services-slide-shipment {
     padding-right: 310px;
