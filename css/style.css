@@ -1903,6 +1903,10 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
+.slider-radio::after:focus {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
 
 .slider-slide {
     display: none;
@@ -1929,6 +1933,16 @@ input[type="radio"].visually-hidden {
     height: 4px;
     border: 1px solid #000000;
     border-radius: 50%;
+}
+
+#product-1:focus ~ .slider-controls .slider-radio-1,
+#product-2:focus ~ .slider-controls .slider-radio-2,
+#product-3:focus ~ .slider-controls .slider-radio-3 {
+      outline: rgb(59, 153, 252) auto 5px;
+}
+
+.slider-controls .slider-radio-1::after:focus ~ #product-1:focus {
+      outline: rgb(59, 153, 252) auto 5px;
 }
 
 
@@ -2117,6 +2131,7 @@ input[type="radio"].visually-hidden {
     min-width: 278px;
     background-color: black;
     color: #f7e184;
+     
 }
 
 
@@ -2143,6 +2158,7 @@ input[type="radio"].visually-hidden {
     min-width: 278px;
     background-color: black;
     color: #f7e184;
+     
 }
 
 
@@ -2168,7 +2184,14 @@ input[type="radio"].visually-hidden {
     min-width: 278px;
     background-color: black;
     color: #f7e184;
+    
 }
+
+#services-product-1:focus ~ .services-list .service-button-1,
+#services-product-2:focus ~ .services-list .service-button-2,
+#services-product-3:focus ~ .services-list .service-button-3{
+    outline: rgb(59, 153, 252) auto 5px;
+} 
 
 .categories {
     margin-bottom: 65px;
@@ -2711,3 +2734,4 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     padding-right: 5px;
 }
+
