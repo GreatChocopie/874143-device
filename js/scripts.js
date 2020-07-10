@@ -8,16 +8,42 @@ var form = popupLetter.querySelector(".form-flex");
 var userName = popupLetter.querySelector(".name");
 var eMail = popupLetter.querySelector(".e-mail");
 
+
+
 map.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.add("modal-show");
 
 });
+if (popupMap.classList.contains("modal-show")) {
+  window.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    var target = evt.target;
+    if (popupMap.classList.contains("modal-show") && target !== popupMap) {
+      popupMap.classList.remove("modal-show");
+      console.log("lssl;");
+    }
+  });
+};
+
+
+
 closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.remove("modal-show");
 
 });
+
+
+
+
+
+
+
+
+
+
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popupMap.classList.contains("modal-show")) {
@@ -25,6 +51,9 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+
 contacts.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupLetter.classList.add("modal-show");
@@ -36,6 +65,9 @@ closeLetter.addEventListener("click", function (evt) {
   popupLetter.classList.remove("modal-error");
 
 });
+
+
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popupLetter.classList.contains("modal-show")) {
