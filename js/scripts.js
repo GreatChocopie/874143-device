@@ -8,31 +8,39 @@ var form = popupLetter.querySelector(".form-flex");
 var userName = popupLetter.querySelector(".name");
 var eMail = popupLetter.querySelector(".e-mail");
 
-
-
-map.addEventListener("click", function (evt) {
+let open = function (evt) {
   evt.preventDefault();
   popupMap.classList.add("modal-show");
 
-});
-if (popupMap.classList.contains("modal-show")) {
-  window.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    var target = evt.target;
-    if (popupMap.classList.contains("modal-show") && target !== popupMap) {
-      popupMap.classList.remove("modal-show");
-      console.log("lssl;");
-    }
-  });
 };
-
-
-
-closeMap.addEventListener("click", function (evt) {
+let close = function (evt) {
   evt.preventDefault();
+
   popupMap.classList.remove("modal-show");
 
+}
+map.addEventListener("click", open);
+document.addEventListener("click", function (evt) {
+  var target = evt.target;
+  if (popupMap.closest(".modal-show") && target !== popupMap) {
+    document.addEventListener("click", close);
+  } else {
+    document.removeEventListener("click", close);
+  }
 });
+
+closeMap.addEventListener("click", close);
+
+// if (open == true) {
+//   window.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     var target = evt.target;
+//     if (popupMap.classList.contains("modal-show") && target !== popupMap) {
+//       popupMap.classList.remove("modal-show");
+//       console.log("lssl;");
+//     }
+//   });
+// };
 
 
 
