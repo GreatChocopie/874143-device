@@ -8,24 +8,51 @@ var form = popupLetter.querySelector(".form-flex");
 var userName = popupLetter.querySelector(".name");
 var eMail = popupLetter.querySelector(".e-mail");
 
-function open(evt) {
+function openMap(evt) {
+  if (popupMap.classList.contains("modal-show")) {
+    console.log("already opened map");
+    evt.preventDefault();
+    return false;
+  }
+  console.log("opening map");
   evt.preventDefault();
+  evt.stopPropagation();
   popupMap.classList.add("modal-show");
-
+  document.addEventListener("click", close);
 };
 
-function close(evt) {
-  evt.preventDefault();
-  popupMap.classList.remove("modal-show");
-  document.removeEventListener("click", close);
-}
-map.addEventListener("click", open);
-document.addEventListener("click", function (evt) {
-  var target = evt.target;
-  if (popupMap.closest(".modal-show") && (target !== popupMap) || (target === closeMap)) {
-    document.addEventListener("click", close);
+// Ищем среди родителей elem присутствует ли neelde
+function elemHasParent(elem, needle) {
+  while (elem != null) {
+    elem = elem.parentNode;
+    if (elem == needle)
+      return true;
   }
-});
+  return false;
+}
+
+
+
+function close(evt) {
+  console.log("close start");
+  console.log(evt.target);
+  var target = evt.target;
+  // если это кнопка закрытия или элемент среди родителей которого нет popupMap и
+  // то закрываем
+  if (!elemHasParent(target, popupMap) || target == closeMap) {
+    console.log("closing map");
+    evt.preventDefault();
+    popupMap.classList.remove("modal-show");
+    document.removeEventListener("click", close);
+    console.log("listener removed");
+  } else {
+    console.log("close - wrong elem, do nothing");
+  }
+}
+map.addEventListener("click", openMap);
+console.log("js is painful");
+
+
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
